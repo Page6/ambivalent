@@ -1,3 +1,7 @@
+## 主要内容
+- 前后端分离
+- 引入前端框架iview
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
