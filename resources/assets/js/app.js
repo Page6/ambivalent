@@ -38,7 +38,10 @@ if (token) {
 
 import Vue from 'vue';
 import router from './routes.js'
+import store from './store.js'
 
+// Vue 全家桶
 new Vue({
-    router
+    router,
+    store
 }).$mount('#app') 
