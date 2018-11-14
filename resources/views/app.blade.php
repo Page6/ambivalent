@@ -10,6 +10,7 @@
 
         <title>Roast</title>
 
+        <script src="http://localhost:8098"></script>
         <script type='text/javascript'>
             // 全局JavaScript变量
             // 我们会将其添加到 Axios 请求头，以便在每个请求中传递来阻止恶意请求
