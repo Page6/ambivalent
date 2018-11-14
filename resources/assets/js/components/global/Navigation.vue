@@ -1,4 +1,3 @@
-<!--使用 SCSS 而不是 CSS-->
 <style lang="scss">
     @import '~@/abstracts/_variables.scss';
 
@@ -62,7 +61,7 @@
 <template>
     <nav class="top-navigation">
 
-    	<router-link :to="{ name: 'home'}">
+        <router-link :to="{ name: 'home'}">
             <span class="logo">Roast</span>
         </router-link>
 
@@ -73,11 +72,7 @@
                 </router-link>
             </li>
         </ul>
-
-        <div class="right">
-            <img class="avatar" :src="user.avatar" v-show="userLoadStatus == 2"/>
-        </div>
-
+        
     </nav>
 </template>
 <script>
