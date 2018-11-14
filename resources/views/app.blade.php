@@ -8,10 +8,12 @@
 
         <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-        <title>Ambivalent</title>
+        <title>Roast</title>
 
         <script type='text/javascript'>
-             window.Ambivalent = <?php echo json_encode([
+            // 全局JavaScript变量
+            // 我们会将其添加到 Axios 请求头，以便在每个请求中传递来阻止恶意请求
+             window.Laravel = <?php echo json_encode([
                 'csrfToken' => csrf_token(),
             ]); ?>
         </script>

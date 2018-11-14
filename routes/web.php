@@ -15,5 +15,5 @@
 //     return view('welcome');
 // });
 
-Route::get('/', 'Web\RapidController@getRapid')
+Route::get('/', 'Web\AppController@getApp')
 	/*->middleware('auth')*/;

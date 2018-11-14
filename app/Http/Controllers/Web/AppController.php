@@ -5,10 +5,10 @@ namespace App\Http\Controllers\Web;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class RapidController extends Controller
+class AppController extends Controller
 {
-    public function getRapid()
+    public function getApp()
     {
-        return view('rapid');
+        return view('app');
     }
 }
