@@ -4,7 +4,10 @@ namespace app\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use App\Models\Cafe;
-use Request;
+use App\Http\Requests\StoreCafeRequest;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class CafesController extends Controller
 {
@@ -44,16 +47,16 @@ class CafesController extends Controller
      | Method:         POST
      | Description:    Adds a new cafe to the application
     */
-    public function postNewCafe(){
+    public function postNewCafe(StoreCafeRequest $request){
         $cafe = new Cafe();
 
         // 假定用户提交的数据都是可靠的，将数据验证逻辑省略掉，只留下数据保存逻辑
-        $cafe->name     = Request::get('name');
-        $cafe->address  = Request::get('address');
-        $cafe->city     = Request::get('city');
-        $cafe->state    = Request::get('state');
-        $cafe->zip      = Request::get('zip');
-
+        $cafe->name     = $request->input('name');
+        $cafe->address  = $request->input('address');
+        $cafe->city     = $request->input('city');
+        $cafe->state    = $request->input('state');
+        $cafe->zip      = $request->input('zip');
+        
         $cafe->save();
 
         return response()->json($cafe, 201);    // 遵循 RESTful 原则返回 201 状态码，表示实体已创建

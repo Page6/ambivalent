@@ -19,7 +19,8 @@ export const cafes = {
         cafes: [],	// 咖啡店数组
         cafesLoadStatus: 0,	// 加载状态: 
         cafe: {},	// 存储单个咖啡店的对象
-        cafeLoadStatus: 0	//0 -> 数据尚未加载, 1 -> 数据开始加载, 2 -> 数据加载成功, 3 -> 数据加载失败
+        cafeLoadStatus: 0,	//0 -> 数据尚未加载, 1 -> 数据开始加载, 2 -> 数据加载成功, 3 -> 数据加载失败
+        cafeAddStatus: 0	// 跟踪咖啡店添加状态
     },
     /**
      * Defines the actions used to retrieve the data.
@@ -51,7 +52,22 @@ export const cafes = {
 	                commit( 'setCafe', {} );
 	                commit( 'setCafeLoadStatus', 3 );
 	            });
-        }
+        },
+        addCafe( { commit, state, dispatch }, data ){	// 通过 dispatch 从 Vuex 模块中分发动作
+        	// 状态1表示开始添加
+		    commit( 'setCafeAddStatus', 1 );
+		    
+		    CafeAPI.postAddNewCafe( data.name, data.address, data.city, data.state, data.zip )
+	            .then( function( response ){
+	                // 状态2表示添加成功
+	                commit( 'setCafeAddStatus', 2 );
+	                dispatch( 'loadCafes' );
+	            })
+	            .catch( function(){
+	                // 状态3表示添加失败
+	                commit( 'setCafeAddStatus', 3 );
+	            });
+		}
     },
     /**
      * Defines the mutations used
@@ -72,7 +88,11 @@ export const cafes = {
 
 	    setCafe( state, cafe ){
 	      state.cafe = cafe;
-	    }
+	    },
+
+	    setCafeAddStatus(state, status) {
+		    state.cafeAddStatus = status;
+		}
 	},
 	/**
      * Defines the getters used by the module
@@ -93,6 +113,10 @@ export const cafes = {
 
 	    getCafe( state ){
 	      return state.cafe;
-	    }
+	    },
+
+	    getCafeAddStatus( state ) {
+		    return state.cafeAddStatus;
+		}
 	}
 }
