@@ -24,7 +24,24 @@ class StoreCafeRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name'    => 'required|max:10',
+            'address' => 'required',
+            'city'    => 'required',
+            'state'   => 'required',
+            'zip'     => 'required|regex:/\b\d{6}\b/'
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'name.required'     => '咖啡店名字不能为空',
+            'name.max'          => '咖啡店名不能超过10个字符',
+            'address.required'  => '咖啡店地址不能为空',
+            'city.required'     => '咖啡店所在城市不能为空',
+            'state.required'    => '咖啡店所在省份不能为空',
+            'zip.required'      => '咖啡店邮编不能为空',
+            'zip.regex'         => '无效的邮政编码'
         ];
     }
 }
