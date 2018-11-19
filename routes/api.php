@@ -67,3 +67,7 @@ Route::group(['prefix' => 'v1'], function(){
     */
     Route::get('/brew-methods', 'API\BrewMethodsController@getBrewMethods');
 });
+
+// 私有路由，需要登录才能访问
+Route::group(['prefix' => 'v1', 'middleware' => 'auth:api'], function () {
+});
