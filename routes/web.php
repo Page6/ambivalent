@@ -15,5 +15,6 @@
 //     return view('welcome');
 // });
 
+// 用户不用登录就可以直接访问应用首页
 Route::get('/', 'Web\AppController@getApp');
 	// ->middleware('guest');

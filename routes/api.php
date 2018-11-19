@@ -19,9 +19,8 @@ use Illuminate\Http\Request;
 
 // 公有路由，无需登录即可访问
 Route::group(['prefix' => 'v1'], function(){
-    Route::get('/user', function( Request $request ){
-        return $request->user();
-    });
+    
+    Route::get('/user', 'API\UsersController@getUser');
 
     /*
      |-------------------------------------------------------------------------------
