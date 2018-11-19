@@ -12,11 +12,21 @@
  */
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+// import iView from 'iview';
+import 'iview/dist/styles/iview.css';
 
 /**
  * Extends Vue to use Vue Router
  */
-Vue.use( VueRouter )
+Vue.use( VueRouter );
+// Vue.use( iView );
+
+/**
+ * Imports iView components
+ */
+import { Button, Table } from 'iview';
+Vue.component('Button', Button);
+Vue.component('Table', Table);
 
 /**
  * Makes a new VueRouter that we will use to run all of the routes for the app.
