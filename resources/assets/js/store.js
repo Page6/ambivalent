@@ -26,8 +26,9 @@ Vue.use( Vuex )
 /**
  * Imports all of the modules used in the application to build the data store.
  */
-import { cafes } from './modules/cafes.js'
+import { cafes } from './modules/cafes.js';
 import { brewMethods } from './modules/brewMethods';
+import { envs } from './modules/envs.js';
 
 /**
  * Export the data store.
@@ -36,6 +37,7 @@ import { brewMethods } from './modules/brewMethods';
 export default new Vuex.Store({
     modules: {
     	cafes,
-    	brewMethods
+    	brewMethods,
+    	envs
     }
 });

@@ -65,6 +65,17 @@ Route::group(['prefix' => 'v1'], function(){
      | API描述: 获取应用中的所有冲泡方法
     */
     Route::get('/brew-methods', 'API\BrewMethodsController@getBrewMethods');
+
+    /*
+     |-------------------------------------------------------------------------------
+     | Get App Name
+     |-------------------------------------------------------------------------------
+     | URL:            /api/v1/app/name
+     | Controller:     API\EnvsController@getAppName
+     | Method:         GET
+     | Description:    Gets app name in the application
+    */
+    Route::get('/app/name', 'API\EnvsController@getAppName');
 });
 
 // 私有路由，需要登录才能访问
