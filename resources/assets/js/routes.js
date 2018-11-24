@@ -24,9 +24,34 @@ Vue.use( VueRouter );
 /**
  * Imports iView components
  */
-import { Button, Table } from 'iview';
+import { 
+    Button,
+    Row,
+    Col,
+    Menu,
+    MenuGroup,
+    Submenu,
+    MenuItem,
+    Icon,
+    Breadcrumb,
+    BreadcrumbItem,
+    Layout,
+    Header,
+    Sider
+} from 'iview';
 Vue.component('Button', Button);
-Vue.component('Table', Table);
+Vue.component('Row', Row);
+Vue.component('Col', Col);
+Vue.component('Menu', Menu);
+Vue.component('MenuGroup', MenuGroup);
+Vue.component('Submenu', Submenu);
+Vue.component('MenuItem', MenuItem);
+Vue.component('Icon', Icon);
+Vue.component('Breadcrumb', Breadcrumb);
+Vue.component('BreadcrumbItem', BreadcrumbItem);
+Vue.component('Layout', Layout);
+Vue.component('Header', Header);
+Vue.component('Sider', Sider);
 
 /**
  * Makes a new VueRouter that we will use to run all of the routes for the app.
