@@ -8,7 +8,7 @@
 
         <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-        <title>Roast</title>
+        <title>{{ config('app.name', 'BYSY') }}</title>
 
         <script src="http://localhost:8098"></script>
         <script type='text/javascript'>
