@@ -37,8 +37,15 @@ import {
     BreadcrumbItem,
     Layout,
     Header,
-    Sider
+    Sider,
+    Message,
+    Modal,
+    Card,
+    Form,
+    FormItem,
+    Input
 } from 'iview';
+
 Vue.component('Button', Button);
 Vue.component('Row', Row);
 Vue.component('Col', Col);
@@ -52,6 +59,12 @@ Vue.component('BreadcrumbItem', BreadcrumbItem);
 Vue.component('Layout', Layout);
 Vue.component('Header', Header);
 Vue.component('Sider', Sider);
+Vue.prototype.$Message = Message;
+Vue.component('Modal', Modal);
+Vue.component('Card', Card);
+Vue.component('Form', Form);
+Vue.component('FormItem', FormItem);
+Vue.component('Input', Input);
 
 /**
  * Makes a new VueRouter that we will use to run all of the routes for the app.
@@ -59,6 +72,11 @@ Vue.component('Sider', Sider);
 // 每个路由都有一个名字，以便我们在应用中直接通过名字就可以访问该路由。
 export default new VueRouter({
     routes: [
+        {
+            path: '/login',
+            name: 'login',
+            component: Vue.component( 'Login', require( './pages/Login.vue' ) ),
+        },
         {
             path: '/',
             redirect: {name: 'home'},
