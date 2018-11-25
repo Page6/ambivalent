@@ -11,5 +11,17 @@ export default {
      */
     getAppName: function(){
         return axios.get( ROAST_CONFIG.API_URL + '/app/name' );
+    },
+    /**
+     * POST /api/v1/user/info
+     */
+    postUserInfo: function( userName, password ){
+        // return axios.get( ROAST_CONFIG.API_URL + '/user/info' );
+        return axios.post( ROAST_CONFIG.API_URL + '/user/info',
+            {
+                userName: userName,
+                password: password
+            }
+        );
     }
 }

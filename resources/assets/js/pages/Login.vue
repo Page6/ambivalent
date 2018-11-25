@@ -5,6 +5,7 @@
 
 <template>
 	<div class="login">
+		<div style="display: none;">{{userInfoLoadStatus}}</div>
 		<div class="login-con">
 			<Card icon="log-in" title="欢迎进入" :bordered="false">
 				<div class="form-con">
@@ -23,10 +24,35 @@
 	    components: {
             LoginForm
         },
+        computed: {
+			userInfoLoadStatus: function() {
+				if(this.$store.getters.getUserInfoLoadStatus == 2){
+					this.$Message.success('登录成功！');
+					this.$router.push('/home');
+					this.$store.dispatch('resetUserInfo');
+				} else if (this.$store.getters.getUserInfoLoadStatus == 3) {
+					this.$Message.error('登录失败！');
+					// this.$router.push('/login');
+					this.$store.dispatch('resetUserInfo');
+				}
+				return this.$store.getters.getUserInfoLoadStatus;
+			}
+		},
         methods: {
 			handleSubmit: function({ userName, password }) {
-				this.$Message.success('登录成功！');
-			}
+				this.$store.dispatch('loadUserInfo', {
+					userName: userName,
+					password: password
+				});
+			},
+			validateUserInfo: function(){
+				let validUserInfo = false; 
+				if (this.$store.getters.getUserInfoLoadStatus == 3){
+					validUserInfo = true;
+				}
+
+		        return validUserInfo;
+		    }
 	    }
 	}
 </script>

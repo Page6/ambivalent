@@ -53803,6 +53803,13 @@ __WEBPACK_IMPORTED_MODULE_19_vue___default.a.component('Input', __WEBPACK_IMPORT
         redirect: { name: 'home' },
         name: 'layout',
         component: __WEBPACK_IMPORTED_MODULE_19_vue___default.a.component('Home', __webpack_require__(123)),
+        beforeEnter: function beforeEnter(to, from, next) {
+            if (window.sessionStorage.getItem('userName') == null) {
+                next({ path: '/login' });
+            } else {
+                next();
+            }
+        },
         children: [{
             path: 'home',
             name: 'home',
@@ -62646,7 +62653,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -62670,11 +62676,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     methods: {
         ok: function ok() {
-            // 直接关闭当前页面
             // window.opener=null;
             // window.close();
             // if (this.userInfoLoadStatus() == '0'){
-            // 清除用户信息，返回登录页面
             this.$store.dispatch('logout');
             this.$router.push('/login');
             // }
@@ -62682,10 +62686,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         cancel: function cancel() {
             this.$Message.info('操作已取消');
         }
-        // userInfoLoadStatus: function(){
-        //     this.$store.dispatch('logout');
-        //     return this.$store.getters.getUserInfoLoadStatus;
-        // }
     }
 });
 
@@ -66560,6 +66560,14 @@ var brewMethods = {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return envs; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__api_env_js__ = __webpack_require__(172);
+function _defineProperty(obj, key, value) {
+    if (key in obj) {
+        Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });
+    } else {
+        obj[key] = value;
+    }return obj;
+}
+
 // 在这个文件中管理所有的环境变量，然后在整个应用中使用这些变量。
 /*
 |-------------------------------------------------------------------------------
@@ -66573,58 +66581,110 @@ var brewMethods = {
 
 // 导出一个常量作为环境变量模块, 这就是要添加到数据存储器的模块
 var envs = {
-  /**
-      * Defines the state being monitored for the module.
-      */
-  // 想要跟踪数据的状态
-  state: {
-    appName: {}, // 存储应用名称的对象
-    appNameLoadStatus: 0, // 加载状态: 0 -> 数据尚未加载, 1 -> 数据开始加载, 2 -> 数据加载成功, 3 -> 数据加载失败
-    dbConnectStatus: 0 // 跟踪数据库连接状态
-  },
-  /**
-   * Defines the actions used to retrieve the data.
-   */
-  // 用于被调用来修改状态
-  actions: {
-    loadAppName: function loadAppName(_ref) {
-      var commit = _ref.commit;
-      // 析构参数 commit ，该参数通过 Vuex 传入，允许我们提交 mutations
-      commit('setAppNameLoadStatus', 1);
+    /**
+     * Defines the state being monitored for the module.
+     */
+    // 想要跟踪数据的状态
+    state: _defineProperty({
+        appName: {}, // 存储应用名称的对象
+        appNameLoadStatus: 0, // 加载状态: 0 -> 数据尚未加载, 1 -> 数据开始加载, 2 -> 数据加载成功, 3 -> 数据加载失败
+        dbConnectStatus: 0, // 跟踪数据库连接状态
+        userInfo: {},
+        userInfoLoadStatus: 0,
+        userName: window.sessionStorage.getItem('userName'),
+        password: window.sessionStorage.getItem('password')
+    }, 'password', window.sessionStorage.getItem('permission')),
+    /**
+     * Defines the actions used to retrieve the data.
+     */
+    // 用于被调用来修改状态
+    actions: {
+        loadAppName: function loadAppName(_ref) {
+            var commit = _ref.commit;
+            // 析构参数 commit ，该参数通过 Vuex 传入，允许我们提交 mutations
+            commit('setAppNameLoadStatus', 1);
 
-      __WEBPACK_IMPORTED_MODULE_0__api_env_js__["a" /* default */].getAppName().then(function (response) {
-        commit('setAppName', response.data);
-        commit('setAppNameLoadStatus', 2);
-      }).catch(function () {
-        commit('setAppName', {});
-        commit('setAppNameLoadStatus', 3);
-      });
-    }
-  },
-  /**
-   * Defines the mutations used
-   */
-  // 定义了数据的更新方式，每个模块都有 state，每个 state 都需要对应的 mutation 来更新
-  mutations: {
-    setAppNameLoadStatus: function setAppNameLoadStatus(state, status) {
-      state.appNameLoadStatus = status;
+            __WEBPACK_IMPORTED_MODULE_0__api_env_js__["a" /* default */].getAppName().then(function (response) {
+                commit('setAppName', response.data);
+                commit('setAppNameLoadStatus', 2);
+            }).catch(function () {
+                commit('setAppName', {});
+                commit('setAppNameLoadStatus', 3);
+            });
+        },
+        loadUserInfo: function loadUserInfo(_ref2, data) {
+            var commit = _ref2.commit;
+
+            commit('setUserInfoLoadStatus', 1);
+
+            __WEBPACK_IMPORTED_MODULE_0__api_env_js__["a" /* default */].postUserInfo(data.userName, data.password).then(function (response) {
+                commit('setUserInfo', response.data);
+                commit('setUserInfoLoadStatus', 2);
+                window.sessionStorage.setItem('userName', response.data.userName);
+                window.sessionStorage.setItem('password', response.data.password);
+                window.sessionStorage.setItem('permission', response.data.permission);
+            }).catch(function () {
+                commit('setUserInfo', {});
+                commit('setUserInfoLoadStatus', 3);
+                throw "fdfdsf";
+            });
+        },
+        resetUserInfo: function resetUserInfo(_ref3) {
+            var commit = _ref3.commit;
+
+            commit('setUserInfoLoadStatus', 0);
+        },
+        logout: function logout(_ref4) {
+            var commit = _ref4.commit;
+
+            commit('removeUserInfo');
+            commit('setUserInfoLoadStatus', 0);
+        }
     },
-    setAppName: function setAppName(state, appName) {
-      state.appName = appName;
-    }
-  },
-  /**
-   * Defines the getters used by the module
-   */
-  // 从模块中获取数据
-  getters: {
-    getAppNameLoadStatus: function getAppNameLoadStatus(state) {
-      return state.appNameLoadStatus;
+    /**
+     * Defines the mutations used
+     */
+    // 定义了数据的更新方式，每个模块都有 state，每个 state 都需要对应的 mutation 来更新
+    mutations: {
+        setAppNameLoadStatus: function setAppNameLoadStatus(state, status) {
+            state.appNameLoadStatus = status;
+        },
+        setAppName: function setAppName(state, appName) {
+            state.appName = appName;
+        },
+        setUserInfoLoadStatus: function setUserInfoLoadStatus(state, status) {
+            state.userInfoLoadStatus = status;
+        },
+        setUserInfo: function setUserInfo(state, userInfo) {
+            state.userInfo = userInfo;
+        },
+        removeUserInfo: function removeUserInfo(state) {
+            state.userName = null;
+            state.password = null;
+            state.permission = null;
+            window.sessionStorage.removeItem('userName');
+            window.sessionStorage.removeItem('password');
+            window.sessionStorage.removeItem('permission');
+        }
     },
-    getAppName: function getAppName(state) {
-      return state.appName;
+    /**
+     * Defines the getters used by the module
+     */
+    // 从模块中获取数据
+    getters: {
+        getAppNameLoadStatus: function getAppNameLoadStatus(state) {
+            return state.appNameLoadStatus;
+        },
+        getAppName: function getAppName(state) {
+            return state.appName;
+        },
+        getUserInfoLoadStatus: function getUserInfoLoadStatus(state) {
+            return state.userInfoLoadStatus;
+        },
+        getUserInfo: function getUserInfo(state) {
+            return state.userInfo;
+        }
     }
-  }
 };
 
 /***/ }),
@@ -66641,12 +66701,22 @@ var envs = {
 
 // 导出一个默认模块以便可以在应用的其它任何地方使用 API 请求
 /* harmony default export */ __webpack_exports__["a"] = ({
-  /**
-      * GET /api/v1/app/name
-      */
-  getAppName: function getAppName() {
-    return axios.get(__WEBPACK_IMPORTED_MODULE_0__config_js__["a" /* ROAST_CONFIG */].API_URL + '/app/name');
-  }
+    /**
+        * GET /api/v1/app/name
+        */
+    getAppName: function getAppName() {
+        return axios.get(__WEBPACK_IMPORTED_MODULE_0__config_js__["a" /* ROAST_CONFIG */].API_URL + '/app/name');
+    },
+    /**
+     * POST /api/v1/user/info
+     */
+    postUserInfo: function postUserInfo(userName, password) {
+        // return axios.get( ROAST_CONFIG.API_URL + '/user/info' );
+        return axios.post(__WEBPACK_IMPORTED_MODULE_0__config_js__["a" /* ROAST_CONFIG */].API_URL + '/user/info', {
+            userName: userName,
+            password: password
+        });
+    }
 });
 
 /***/ }),
@@ -73539,6 +73609,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -73546,12 +73617,37 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 	components: {
 		LoginForm: __WEBPACK_IMPORTED_MODULE_0__components_global_LoginForm_vue___default.a
 	},
+	computed: {
+		userInfoLoadStatus: function userInfoLoadStatus() {
+			if (this.$store.getters.getUserInfoLoadStatus == 2) {
+				this.$Message.success('登录成功！');
+				this.$router.push('/home');
+				this.$store.dispatch('resetUserInfo');
+			} else if (this.$store.getters.getUserInfoLoadStatus == 3) {
+				this.$Message.error('登录失败！');
+				// this.$router.push('/login');
+				this.$store.dispatch('resetUserInfo');
+			}
+			return this.$store.getters.getUserInfoLoadStatus;
+		}
+	},
 	methods: {
 		handleSubmit: function handleSubmit(_ref) {
 			var userName = _ref.userName,
 			    password = _ref.password;
 
-			this.$Message.success('登录成功！');
+			this.$store.dispatch('loadUserInfo', {
+				userName: userName,
+				password: password
+			});
+		},
+		validateUserInfo: function validateUserInfo() {
+			var validUserInfo = false;
+			if (this.$store.getters.getUserInfoLoadStatus == 3) {
+				validUserInfo = true;
+			}
+
+			return validUserInfo;
 		}
 	}
 });
@@ -73697,6 +73793,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 			this.$refs.loginForm.validate(function (valid) {
 				if (valid) {
 					_this.$Message.success('验证成功！');
+					// this.$router.push('/home');
 					_this.$emit('on-success-valid', {
 						userName: _this.form.userName,
 						password: _this.form.password
@@ -73832,6 +73929,10 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "login" }, [
+    _c("div", { staticStyle: { display: "none" } }, [
+      _vm._v(_vm._s(_vm.userInfoLoadStatus))
+    ]),
+    _vm._v(" "),
     _c(
       "div",
       { staticClass: "login-con" },

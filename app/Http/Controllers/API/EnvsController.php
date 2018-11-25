@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\API;
 
 use App\Models\Env;
+use App\Http\Requests\StoreEnvRequest;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -18,9 +19,31 @@ class EnvsController extends Controller
      | Description:    Gets the app name in the application
     */
     public function getAppName(){
-    	
-        $appName = env('APP_NAME', 'Page6');
+        
+        $appName = env('APP_NAME', 'BYSY');
 
         return response()->json( $appName );    //以 JSON 格式返回 API 请求数据
+    }
+
+    /*
+     |-------------------------------------------------------------------------------
+     | Post User Info
+     |-------------------------------------------------------------------------------
+     | URL:            /api/v1/user/info
+     | Method:         POST
+     | Description:    Posts the user info in the application
+    */
+    public function postUserInfo(StoreEnvRequest $request){
+        $userName = $request->input('userName');
+        $password = $request->input('password');
+        $permission = '3';
+
+        if ($userName == 'admin') {
+            $userInfo = ['userName'=>'$userName','password'=>'$password','permission'=>'$permission'];
+            return response()->json( $userInfo, 301 );
+        } else {
+            $userInfo = ['userName'=>$userName,'password'=>$password,'permission'=>$permission];
+            return response()->json( $userInfo, 201 );    //以 JSON 格式返回 API 请求数据
+        }
     }
 }

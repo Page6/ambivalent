@@ -82,6 +82,13 @@ export default new VueRouter({
             redirect: {name: 'home'},
             name: 'layout',
             component: Vue.component( 'Home', require( './pages/Layout.vue' ) ),
+            beforeEnter: (to, from, next) => {
+                if (window.sessionStorage.getItem('userName')==null) {
+                    next({path: '/login'});
+                } else {
+                    next();
+                }
+            },
             children: [
                 {
                     path: 'home',

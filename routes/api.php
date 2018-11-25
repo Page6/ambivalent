@@ -76,6 +76,17 @@ Route::group(['prefix' => 'v1'], function(){
      | Description:    Gets app name in the application
     */
     Route::get('/app/name', 'API\EnvsController@getAppName');
+
+    /*
+     |-------------------------------------------------------------------------------
+     | Get User Info
+     |-------------------------------------------------------------------------------
+     | URL:            /api/v1/user/info
+     | Controller:     API\EnvsController@postUserInfo
+     | Method:         GET
+     | Description:    Gets user info in the application
+    */
+    Route::post('/user/info', 'API\EnvsController@postUserInfo');
 });
 
 // 私有路由，需要登录才能访问

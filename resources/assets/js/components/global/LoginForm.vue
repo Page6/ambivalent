@@ -44,6 +44,7 @@
 				this.$refs.loginForm.validate((valid) => {
 					if (valid) {
 						this.$Message.success('验证成功！');
+						// this.$router.push('/home');
 						this.$emit('on-success-valid', {
 				            userName: this.form.userName,
 				            password: this.form.password

@@ -4,7 +4,6 @@
 <template>
     <div>
         <Menu active-name="" theme="dark" width="dark" :open-names="['']">
-            <!--读取用户名-->
             <div class="layout-logo-left">【{{ userName }}】</div>
             <Submenu name="1">
                 <template slot="title">
@@ -62,11 +61,9 @@
         },
         methods: {
             ok: function(){
-                // 直接关闭当前页面
                 // window.opener=null;
                 // window.close();
                 // if (this.userInfoLoadStatus() == '0'){
-                // 清除用户信息，返回登录页面
                 this.$store.dispatch('logout');
                 this.$router.push('/login');
                 // }
@@ -74,10 +71,6 @@
             cancel: function(){
                 this.$Message.info('操作已取消');
             }
-            // userInfoLoadStatus: function(){
-            //     this.$store.dispatch('logout');
-            //     return this.$store.getters.getUserInfoLoadStatus;
-            // }
         }
     }
 </script>
