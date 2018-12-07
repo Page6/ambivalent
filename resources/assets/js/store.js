@@ -27,7 +27,7 @@ Vue.use( Vuex )
  * Imports all of the modules used in the application to build the data store.
  */
 import { cafes } from './modules/cafes.js';
-import { brewMethods } from './modules/brewMethods';
+import { brewMethods } from './modules/brewMethods.js';
 import { envs } from './modules/envs.js';
 import { reports } from './modules/reports.js'
 

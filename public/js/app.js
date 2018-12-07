@@ -71436,7 +71436,7 @@ if (false) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuex__ = __webpack_require__(313);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modules_cafes_js__ = __webpack_require__(314);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modules_brewMethods__ = __webpack_require__(316);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modules_brewMethods_js__ = __webpack_require__(316);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__modules_envs_js__ = __webpack_require__(318);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__modules_reports_js__ = __webpack_require__(384);
 /*
@@ -71479,7 +71479,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex
 /* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */].Store({
   modules: {
     cafes: __WEBPACK_IMPORTED_MODULE_2__modules_cafes_js__["a" /* cafes */],
-    brewMethods: __WEBPACK_IMPORTED_MODULE_3__modules_brewMethods__["a" /* brewMethods */],
+    brewMethods: __WEBPACK_IMPORTED_MODULE_3__modules_brewMethods_js__["a" /* brewMethods */],
     envs: __WEBPACK_IMPORTED_MODULE_4__modules_envs_js__["a" /* envs */],
     reports: __WEBPACK_IMPORTED_MODULE_5__modules_reports_js__["a" /* reports */]
   }
