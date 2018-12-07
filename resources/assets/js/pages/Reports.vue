@@ -49,7 +49,9 @@
 						 				size: 'small'
 						 			},
 						 			on: {
-						 				click: () => {}
+						 				click: () => {
+						 					this.$router.push('/reports/'+this.reportsData[params.row.initRowIndex].id);
+						 				}
 						 			}
 						 		}, '查询')])
 						}

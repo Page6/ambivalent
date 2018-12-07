@@ -98,6 +98,39 @@ Route::group(['prefix' => 'v1'], function(){
      | Description:    Gets all of the reports in the application
     */
     Route::post('/reports', 'API\ReportsController@postReports');
+
+    /*
+     |-------------------------------------------------------------------------------
+     | Get An Individual Report
+     |-------------------------------------------------------------------------------
+     | URL:            /api/v1/reports/{id}
+     | Controller:     API\ReportsController@getReport
+     | Method:         GET
+     | Description:    Gets an individual report
+    */
+    Route::get('/reports/{id}', 'API\ReportsController@getReport');
+
+    /*
+     |-------------------------------------------------------------------------------
+     | Get All Results
+     |-------------------------------------------------------------------------------
+     | URL:            /api/v1/results
+     | Controller:     API\ReportsController@postResults
+     | Method:         POST
+     | Description:    Gets all of the results in the application
+    */
+    Route::post('/results', 'API\ReportsController@postResults');
+
+    /*
+     |-------------------------------------------------------------------------------
+     | Get Report Columns
+     |-------------------------------------------------------------------------------
+     | URL:            /api/v1/columns/{id}
+     | Controller:     API\ReportsController@getColumns
+     | Method:         GET
+     | Description:    Gets report columns
+    */
+    Route::get('/columns/{id}', 'API\ReportsController@getColumns');
 });
 
 // 私有路由，需要登录才能访问

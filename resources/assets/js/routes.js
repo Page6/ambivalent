@@ -44,7 +44,12 @@ import {
     Form,
     FormItem,
     Input,
-    Table
+    Table,
+    Select,
+    Option,
+    OptionGroup,
+    DatePicker,
+    Spin
 } from 'iview';
 
 Vue.component('Button', Button);
@@ -67,6 +72,12 @@ Vue.component('Form', Form);
 Vue.component('FormItem', FormItem);
 Vue.component('Input', Input);
 Vue.component('Table', Table);
+Vue.component('Select', Select);
+Vue.component('Option', Option);
+Vue.component('OptionGroup', OptionGroup);
+Vue.component('DatePicker', DatePicker);
+Vue.prototype.$Spin = Spin;
+Vue.component('Spin', Spin);
 
 /**
  * Makes a new VueRouter that we will use to run all of the routes for the app.
@@ -101,6 +112,11 @@ export default new VueRouter({
                     path: 'reports',
                     name: 'reports',
                     component: Vue.component( 'Reports', require( './pages/Reports.vue' ) )
+                },
+                {
+                    path: 'reports/:id',
+                    name: 'report',
+                    component: Vue.component( 'Report', require( './pages/Report.vue' ) )
                 },
                 {
                     path: 'cafes',

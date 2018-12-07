@@ -14,5 +14,26 @@ export default {
             {
                 permission: permission
             } );
+    },
+    /**
+     * GET /api/v1/reports/{reportID}
+     */
+    getReport: function( reportID ){
+        return axios.get( ROAST_CONFIG.API_URL + '/reports/' + reportID );
+    },
+    /**
+     * POST /api/v1/results
+     */
+    postResults: function( search ){
+        return axios.post( ROAST_CONFIG.API_URL + '/results',
+            {
+                search: search
+            } );
+    },
+    /**
+     * GET /api/v1/columns/{reportID}
+     */
+    getColumns: function( reportID ){
+        return axios.get( ROAST_CONFIG.API_URL + '/columns/' + reportID );
     }
 }
