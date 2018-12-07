@@ -43,7 +43,8 @@ import {
     Card,
     Form,
     FormItem,
-    Input
+    Input,
+    Table
 } from 'iview';
 
 Vue.component('Button', Button);
@@ -65,6 +66,7 @@ Vue.component('Card', Card);
 Vue.component('Form', Form);
 Vue.component('FormItem', FormItem);
 Vue.component('Input', Input);
+Vue.component('Table', Table);
 
 /**
  * Makes a new VueRouter that we will use to run all of the routes for the app.
@@ -94,6 +96,11 @@ export default new VueRouter({
                     path: 'home',
                     name: 'home',
                     component: Vue.component( 'Home', require( './pages/Home.vue' ) )
+                },
+                {
+                    path: 'reports',
+                    name: 'reports',
+                    component: Vue.component( 'Reports', require( './pages/Reports.vue' ) )
                 },
                 {
                     path: 'cafes',

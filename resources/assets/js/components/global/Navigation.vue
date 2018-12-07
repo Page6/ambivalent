@@ -18,7 +18,7 @@
                     <Icon type="ios-search"></Icon>
                     数据管理
                 </template>
-                <MenuItem name="2-1">报表查询</MenuItem>
+                <MenuItem name="2-1" @click.native="loadReports">报表查询</MenuItem>
                 <MenuItem name="2-2" to="/home">跟踪日志</MenuItem>
             </Submenu>
             <Submenu name="3">
@@ -68,6 +68,11 @@
             }
         },
         methods: {
+            loadReports: function(){
+                // this.$store.dispatch('loadReports');
+                this.$router.push('/reports');
+                // return this.$store.getters.getReportsLoadStatus;
+            },
             ok: function(){
                 // window.opener=null;
                 // window.close();

@@ -87,6 +87,17 @@ Route::group(['prefix' => 'v1'], function(){
      | Description:    Gets user info in the application
     */
     Route::post('/user/info', 'API\EnvsController@postUserInfo');
+
+    /*
+     |-------------------------------------------------------------------------------
+     | Get All Reports
+     |-------------------------------------------------------------------------------
+     | URL:            /api/v1/reports
+     | Controller:     API\ReportsController@postReports
+     | Method:         POST
+     | Description:    Gets all of the reports in the application
+    */
+    Route::post('/reports', 'API\ReportsController@postReports');
 });
 
 // 私有路由，需要登录才能访问
