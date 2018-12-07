@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\API;
 
 use App\Models\Env;
-use App\Http\Requests\StoreEnvRequest;
+use App\Http\Requests\ExtractEnvRequest;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -33,7 +33,7 @@ class EnvsController extends Controller
      | Method:         POST
      | Description:    Posts the user info in the application
     */
-    public function postUserInfo(StoreEnvRequest $request){
+    public function postUserInfo(ExtractEnvRequest $request){
         $userName = $request->input('userName');
         $password = $request->input('password');
         $permission = '3';
