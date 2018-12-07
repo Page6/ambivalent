@@ -23,7 +23,7 @@ export const envs = {
         userInfoLoadStatus: 0,
         userName: window.sessionStorage.getItem('userName'),
         password: window.sessionStorage.getItem('password'),
-        password: window.sessionStorage.getItem('permission')
+        permission: window.sessionStorage.getItem('permission')
     },
     /**
      * Defines the actions used to retrieve the data.
@@ -117,6 +117,10 @@ export const envs = {
 
         getUserInfo( state ){
           return state.userInfo;
+        },
+
+        getDbConnectStatus( state ){
+          return state.dbConnectStatus;
         }
     }
 }
