@@ -19,10 +19,18 @@
                     数据管理
                 </template>
                 <MenuItem name="2-1">报表查询</MenuItem>
-                <MenuItem name="2-2">统计分析</MenuItem>
+                <MenuItem name="2-2" to="/home">跟踪日志</MenuItem>
+            </Submenu>
+            <Submenu name="3">
+                <template slot="title">
+                    <Icon type="ios-folder"></Icon>
+                    上传管理
+                </template>
+                <MenuItem name="3-1">系统更新</MenuItem>
+                <MenuItem name="3-2">数据更新</MenuItem>
             </Submenu>
             <MenuGroup>
-                <MenuItem name="3" @click.native="modal1 = true">
+                <MenuItem name="4" @click.native="modal1 = true">
                     
                         <Icon type="ios-log-out"></Icon>
                         退出

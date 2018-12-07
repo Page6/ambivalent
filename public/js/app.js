@@ -69905,6 +69905,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -70004,7 +70012,30 @@ var render = function() {
               _vm._v(" "),
               _c("MenuItem", { attrs: { name: "2-1" } }, [_vm._v("报表查询")]),
               _vm._v(" "),
-              _c("MenuItem", { attrs: { name: "2-2" } }, [_vm._v("统计分析")])
+              _c("MenuItem", { attrs: { name: "2-2", to: "/home" } }, [
+                _vm._v("跟踪日志")
+              ])
+            ],
+            2
+          ),
+          _vm._v(" "),
+          _c(
+            "Submenu",
+            { attrs: { name: "3" } },
+            [
+              _c(
+                "template",
+                { slot: "title" },
+                [
+                  _c("Icon", { attrs: { type: "ios-folder" } }),
+                  _vm._v("\n                上传管理\n            ")
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("MenuItem", { attrs: { name: "3-1" } }, [_vm._v("系统更新")]),
+              _vm._v(" "),
+              _c("MenuItem", { attrs: { name: "3-2" } }, [_vm._v("数据更新")])
             ],
             2
           ),
@@ -70015,7 +70046,7 @@ var render = function() {
               _c(
                 "MenuItem",
                 {
-                  attrs: { name: "3" },
+                  attrs: { name: "4" },
                   nativeOn: {
                     click: function($event) {
                       _vm.modal1 = true
