@@ -1,21 +1,22 @@
 <style lang="scss">
-	
+    
 </style>
 
 <template>
 	<Form ref="loginForm" :model="form" :rules="rules" @keydowm.enter.native="handleSubmit" >
 		<FormItem prop="userName">
-			<Input type="text" v-model="form.userName" placeholder="请输入用户名">
-				<Icon type="ios-person-outline" slot="prepend"></Icon>
-			</Input>
+			<input class="userinfo" type="text" v-model="form.userName" placeholder="请输入用户名">
+				<!-- <Icon type="ios-person-outline" slot="prepend"></Icon> -->
+			</input>
 		</FormItem>
 		<FormItem prop="password">
-			<Input type="text" v-model="form.password" placeholder="密码">
-				<Icon type="ios-lock-outline" slot="prepend"></Icon>
-			</Input>
+			<input class="userinfo" type="text" v-model="form.password" placeholder="密码">
+				<!-- <Icon type="ios-lock-outline" slot="prepend"></Icon> -->
+			</input>
 		</FormItem>
 		<FromItem>
-			<Button type="primary" @click="handleSubmit('form')">登录</Button>
+			<!-- <Button class="signin" type="primary" @click="handleSubmit('form')">登录</Button> -->
+			<button class="signin" type="submit" @click="handleSubmit('form')">登录</button>
 		</FromItem>
 	</Form>
 </template>

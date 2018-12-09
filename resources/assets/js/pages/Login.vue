@@ -5,15 +5,19 @@
 
 <template>
 	<div class="login">
+		<div class="page-container">
+			<h1>欢迎登录</h1>
+			<login-form @on-success-valid="handleSubmit"></login-form>
+		</div>
 		<div style="display: none;">{{userInfoLoadStatus}}</div>
-		<div class="login-con">
+		<!-- <div class="login-con">
 			<Card icon="log-in" title="欢迎进入" :bordered="false">
 				<div class="form-con">
 					<login-form @on-success-valid="handleSubmit"></login-form>
 					<p class="login-tip">请输入用户名和密码登录</p>
 				</div>
 			</Card>
-		</div>
+		</div> -->
 	</div>
 </template>
 
