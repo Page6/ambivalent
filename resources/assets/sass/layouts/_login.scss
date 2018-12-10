@@ -124,7 +124,7 @@ form {
     -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
     font-size: 14px;
-    color: $black;
+    color: #fff;
     text-shadow: 0 1px 2px rgba(0,0,0,.1);
     -o-transition: all .2s;
     -moz-transition: all .2s;
@@ -137,6 +137,7 @@ form {
 .userinfo:-webkit-input-placeholder { color: #fff; }
 
 .userinfo:focus {
+    background: rgba(45,45,45,.15);
     outline: none;
     -moz-box-shadow:
         0 2px 3px 0 rgba(0,0,0,.1) inset,

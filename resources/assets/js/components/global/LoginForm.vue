@@ -10,7 +10,7 @@
 			</input>
 		</FormItem>
 		<FormItem prop="password">
-			<input class="userinfo" type="text" v-model="form.password" placeholder="密码">
+			<input class="userinfo" type="password" v-model="form.password" placeholder="请输入密码">
 				<!-- <Icon type="ios-lock-outline" slot="prepend"></Icon> -->
 			</input>
 		</FormItem>
