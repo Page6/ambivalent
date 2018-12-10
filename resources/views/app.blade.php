@@ -8,7 +8,7 @@
 
         <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-        <title>{{ config('app.name', 'BYSY') }}</title>
+        <title>{{ config('app.name', '综合查询系统') }}</title>
 
         <script src="http://localhost:8098"></script>
         <script type='text/javascript'>

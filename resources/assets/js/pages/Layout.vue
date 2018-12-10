@@ -4,21 +4,20 @@
 </style>
 
 <template>
-    <Layout  class="layout">
-        <Sider class="layout-menu-left" hide-trigger>
+    <Layout class="layout">
+        <Header class="header">
             <navigation></navigation>
-        </Sider> 
-        <Layout :style="{marginLeft: '200px'}">
-            <Header class="layout-logo">
-                <logo></logo>
-            </Header>   
-            <Content class="layout-content">
-                <router-view class="layout-content-main"></router-view>
-            </Content>
-            <Footer class="layout-copy">
-                <copyright></copyright>
-            </Footer>
-        </Layout>
+        </Header>
+        <Content class="layout-content">
+            <Breadcrumb :style="{margin: '20px 0'}">
+                <BreadcrumbItem>{{userName}}</BreadcrumbItem>
+                <BreadcrumbItem>主页</BreadcrumbItem>
+            </Breadcrumb>
+            <router-view class="layout-content-main"></router-view>
+        </Content>
+        <Footer class="layout-copy">
+            <copyright></copyright>
+        </Footer>
     </Layout>
 </template>
 
@@ -32,6 +31,12 @@
             Navigation,
             Logo,
             Copyright
+        },
+        computed: {
+            // 从 Vuex 中获取用户信息
+            userName: function(){
+                return window.sessionStorage.getItem('userName');
+            }
         }
     }
 </script>

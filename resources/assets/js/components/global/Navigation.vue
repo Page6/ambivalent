@@ -2,35 +2,21 @@
     @import '~@/layouts/_theme.scss';
 </style>
 <template>
-    <div>
-        <Menu active-name="" theme="dark" width="dark" :open-names="['']">
-            <div class="layout-logo-left">【{{ userName }}】</div>
+    <Menu mode="horizontal" active-name="" theme="dark" :open-names="['']">
+        <div class="layout-logo-top">
+            <img src="../../../images/logo.png" width="200" height="30" alt="综合查询系统" />
+        </div>
+        <div class="layout-nav">
             <Submenu name="1">
                 <template slot="title">
                     <Icon type="ios-contact"></Icon>
                     用户管理
                 </template>
-                <MenuItem name="1-1">修改密码</MenuItem>
-                <MenuItem name="1-2">注册用户</MenuItem>
-            </Submenu>
-            <Submenu name="2">
-                <template slot="title">
-                    <Icon type="ios-search"></Icon>
-                    数据管理
-                </template>
-                <MenuItem name="2-1" @click.native="loadReports">报表查询</MenuItem>
-                <MenuItem name="2-2" to="/home">跟踪日志</MenuItem>
-            </Submenu>
-            <Submenu name="3">
-                <template slot="title">
-                    <Icon type="ios-folder"></Icon>
-                    上传管理
-                </template>
-                <MenuItem name="3-1">系统更新</MenuItem>
-                <MenuItem name="3-2">数据更新</MenuItem>
-            </Submenu>
-            <MenuGroup>
-                <MenuItem name="4" @click.native="modal1 = true">
+                <MenuItem name="1-1">
+                    <Icon type="ios-key"></Icon>
+                    修改密码
+                </MenuItem>
+                <MenuItem name="1-2" @click.native="modal1 = true">
                     
                         <Icon type="ios-log-out"></Icon>
                         退出
@@ -43,9 +29,37 @@
                     @on-cancel="cancel">
                     <p>是否退出系统？</p>
                 </Modal>
-            </MenuGroup>
-        </Menu>
-    </div>
+            </Submenu>
+            <Submenu name="2">
+                <template slot="title">
+                    <Icon type="ios-search"></Icon>
+                    数据管理
+                </template>
+                <MenuItem name="2-1" @click.native="loadReports">
+                    <Icon type="ios-paper"></Icon>
+                    报表查询
+                </MenuItem>
+                <MenuItem name="2-2" to="/home">
+                    <Icon type="ios-calendar"></Icon>
+                    跟踪日志
+                </MenuItem>
+            </Submenu>
+            <Submenu name="3">
+                <template slot="title">
+                    <Icon type="ios-folder"></Icon>
+                    上传管理
+                </template>
+                <MenuItem name="3-1">
+                    <Icon type="ios-cloud-upload"></Icon>
+                    系统更新
+                </MenuItem>
+                <MenuItem name="3-2">
+                    <Icon type="ios-podium"></Icon>
+                    数据更新
+                </MenuItem>
+            </Submenu>
+        </div>
+    </Menu>
 </template>
 <script>
     export default {
@@ -54,18 +68,12 @@
                 modal1: false
             }
         },
-        created: {},
         // 定义组件的计算属性
         computed: {
             // 从 Vuex 中获取用户加载状态
             // userLoadStatus: function(){
             //     return this.$store.getters.getUserLoadStatus;
             // },
-
-            // 从 Vuex 中获取用户信息
-            userName: function(){
-                return window.sessionStorage.getItem('userName');
-            }
         },
         methods: {
             loadReports: function(){

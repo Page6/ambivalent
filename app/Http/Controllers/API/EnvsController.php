@@ -20,7 +20,7 @@ class EnvsController extends Controller
     */
     public function getAppName(){
         
-        $appName = env('APP_NAME', 'BYSY');
+        $appName = env('APP_NAME', '综合查询系统');
 
         return response()->json( $appName );    //以 JSON 格式返回 API 请求数据
     }

@@ -83989,7 +83989,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #5b6270;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n", ""]);
+exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-logo-top {\n  width: 200px;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  float: left;\n}\n.layout-title-top {\n  width: 100px;\n  height: 30px;\n  border-radius: 3px;\n  float: left;\n  margin-top: -15px;\n  font-size: 14px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-nav {\n  width: 520px;\n  margin: 0 auto;\n  margin-right: -120px;\n}\n", ""]);
 
 // exports
 
@@ -84029,7 +84029,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 
 
@@ -84040,6 +84039,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         Navigation: __WEBPACK_IMPORTED_MODULE_0__components_global_Navigation_vue___default.a,
         Logo: __WEBPACK_IMPORTED_MODULE_1__components_global_Logo_vue___default.a,
         Copyright: __WEBPACK_IMPORTED_MODULE_2__components_global_Copyright_vue___default.a
+    },
+    computed: {
+        // 从 Vuex 中获取用户信息
+        userName: function userName() {
+            return window.sessionStorage.getItem('userName');
+        }
     }
 });
 
@@ -84129,7 +84134,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #5b6270;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n", ""]);
+exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-logo-top {\n  width: 200px;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  float: left;\n}\n.layout-title-top {\n  width: 100px;\n  height: 30px;\n  border-radius: 3px;\n  float: left;\n  margin-top: -15px;\n  font-size: 14px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-nav {\n  width: 520px;\n  margin: 0 auto;\n  margin-right: -120px;\n}\n", ""]);
 
 // exports
 
@@ -84189,6 +84194,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -84197,18 +84216,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         };
     },
 
-    created: {},
     // 定义组件的计算属性
     computed: {
         // 从 Vuex 中获取用户加载状态
         // userLoadStatus: function(){
         //     return this.$store.getters.getUserLoadStatus;
         // },
-
-        // 从 Vuex 中获取用户信息
-        userName: function userName() {
-            return window.sessionStorage.getItem('userName');
-        }
     },
     methods: {
         loadReports: function loadReports() {
@@ -84239,23 +84252,31 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "div",
+    "Menu",
+    {
+      attrs: {
+        mode: "horizontal",
+        "active-name": "",
+        theme: "dark",
+        "open-names": [""]
+      }
+    },
     [
-      _c(
-        "Menu",
-        {
+      _c("div", { staticClass: "layout-logo-top" }, [
+        _c("img", {
           attrs: {
-            "active-name": "",
-            theme: "dark",
-            width: "dark",
-            "open-names": [""]
+            src: __webpack_require__(462),
+            width: "200",
+            height: "30",
+            alt: "综合查询系统"
           }
-        },
+        })
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "layout-nav" },
         [
-          _c("div", { staticClass: "layout-logo-left" }, [
-            _vm._v("【" + _vm._s(_vm.userName) + "】")
-          ]),
-          _vm._v(" "),
           _c(
             "Submenu",
             { attrs: { name: "1" } },
@@ -84270,23 +84291,12 @@ var render = function() {
                 1
               ),
               _vm._v(" "),
-              _c("MenuItem", { attrs: { name: "1-1" } }, [_vm._v("修改密码")]),
-              _vm._v(" "),
-              _c("MenuItem", { attrs: { name: "1-2" } }, [_vm._v("注册用户")])
-            ],
-            2
-          ),
-          _vm._v(" "),
-          _c(
-            "Submenu",
-            { attrs: { name: "2" } },
-            [
               _c(
-                "template",
-                { slot: "title" },
+                "MenuItem",
+                { attrs: { name: "1-1" } },
                 [
-                  _c("Icon", { attrs: { type: "ios-search" } }),
-                  _vm._v("\n                数据管理\n            ")
+                  _c("Icon", { attrs: { type: "ios-key" } }),
+                  _vm._v("\n                修改密码\n            ")
                 ],
                 1
               ),
@@ -84294,51 +84304,7 @@ var render = function() {
               _c(
                 "MenuItem",
                 {
-                  attrs: { name: "2-1" },
-                  nativeOn: {
-                    click: function($event) {
-                      return _vm.loadReports($event)
-                    }
-                  }
-                },
-                [_vm._v("报表查询")]
-              ),
-              _vm._v(" "),
-              _c("MenuItem", { attrs: { name: "2-2", to: "/home" } }, [
-                _vm._v("跟踪日志")
-              ])
-            ],
-            2
-          ),
-          _vm._v(" "),
-          _c(
-            "Submenu",
-            { attrs: { name: "3" } },
-            [
-              _c(
-                "template",
-                { slot: "title" },
-                [
-                  _c("Icon", { attrs: { type: "ios-folder" } }),
-                  _vm._v("\n                上传管理\n            ")
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c("MenuItem", { attrs: { name: "3-1" } }, [_vm._v("系统更新")]),
-              _vm._v(" "),
-              _c("MenuItem", { attrs: { name: "3-2" } }, [_vm._v("数据更新")])
-            ],
-            2
-          ),
-          _vm._v(" "),
-          _c(
-            "MenuGroup",
-            [
-              _c(
-                "MenuItem",
-                {
-                  attrs: { name: "4" },
+                  attrs: { name: "1-2" },
                   nativeOn: {
                     click: function($event) {
                       _vm.modal1 = true
@@ -84370,13 +84336,93 @@ var render = function() {
                 [_c("p", [_vm._v("是否退出系统？")])]
               )
             ],
-            1
+            2
+          ),
+          _vm._v(" "),
+          _c(
+            "Submenu",
+            { attrs: { name: "2" } },
+            [
+              _c(
+                "template",
+                { slot: "title" },
+                [
+                  _c("Icon", { attrs: { type: "ios-search" } }),
+                  _vm._v("\n                数据管理\n            ")
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "MenuItem",
+                {
+                  attrs: { name: "2-1" },
+                  nativeOn: {
+                    click: function($event) {
+                      return _vm.loadReports($event)
+                    }
+                  }
+                },
+                [
+                  _c("Icon", { attrs: { type: "ios-paper" } }),
+                  _vm._v("\n                报表查询\n            ")
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "MenuItem",
+                { attrs: { name: "2-2", to: "/home" } },
+                [
+                  _c("Icon", { attrs: { type: "ios-calendar" } }),
+                  _vm._v("\n                跟踪日志\n            ")
+                ],
+                1
+              )
+            ],
+            2
+          ),
+          _vm._v(" "),
+          _c(
+            "Submenu",
+            { attrs: { name: "3" } },
+            [
+              _c(
+                "template",
+                { slot: "title" },
+                [
+                  _c("Icon", { attrs: { type: "ios-folder" } }),
+                  _vm._v("\n                上传管理\n            ")
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "MenuItem",
+                { attrs: { name: "3-1" } },
+                [
+                  _c("Icon", { attrs: { type: "ios-cloud-upload" } }),
+                  _vm._v("\n                系统更新\n            ")
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "MenuItem",
+                { attrs: { name: "3-2" } },
+                [
+                  _c("Icon", { attrs: { type: "ios-podium" } }),
+                  _vm._v("\n                数据更新\n            ")
+                ],
+                1
+              )
+            ],
+            2
           )
         ],
         1
       )
-    ],
-    1
+    ]
   )
 }
 var staticRenderFns = []
@@ -84475,7 +84521,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #5b6270;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n", ""]);
+exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-logo-top {\n  width: 200px;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  float: left;\n}\n.layout-title-top {\n  width: 100px;\n  height: 30px;\n  border-radius: 3px;\n  float: left;\n  margin-top: -15px;\n  font-size: 14px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-nav {\n  width: 520px;\n  margin: 0 auto;\n  margin-right: -120px;\n}\n", ""]);
 
 // exports
 
@@ -84616,7 +84662,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #5b6270;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n", ""]);
+exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-logo-top {\n  width: 200px;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  float: left;\n}\n.layout-title-top {\n  width: 100px;\n  height: 30px;\n  border-radius: 3px;\n  float: left;\n  margin-top: -15px;\n  font-size: 14px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-nav {\n  width: 520px;\n  margin: 0 auto;\n  margin-right: -120px;\n}\n", ""]);
 
 // exports
 
@@ -84672,30 +84718,29 @@ var render = function() {
     "Layout",
     { staticClass: "layout" },
     [
-      _c(
-        "Sider",
-        { staticClass: "layout-menu-left", attrs: { "hide-trigger": "" } },
-        [_c("navigation")],
-        1
-      ),
+      _c("Header", { staticClass: "header" }, [_c("navigation")], 1),
       _vm._v(" "),
       _c(
-        "Layout",
-        { style: { marginLeft: "200px" } },
+        "Content",
+        { staticClass: "layout-content" },
         [
-          _c("Header", { staticClass: "layout-logo" }, [_c("logo")], 1),
-          _vm._v(" "),
           _c(
-            "Content",
-            { staticClass: "layout-content" },
-            [_c("router-view", { staticClass: "layout-content-main" })],
+            "Breadcrumb",
+            { style: { margin: "20px 0" } },
+            [
+              _c("BreadcrumbItem", [_vm._v(_vm._s(_vm.userName))]),
+              _vm._v(" "),
+              _c("BreadcrumbItem", [_vm._v("主页")])
+            ],
             1
           ),
           _vm._v(" "),
-          _c("Footer", { staticClass: "layout-copy" }, [_c("copyright")], 1)
+          _c("router-view", { staticClass: "layout-content-main" })
         ],
         1
-      )
+      ),
+      _vm._v(" "),
+      _c("Footer", { staticClass: "layout-copy" }, [_c("copyright")], 1)
     ],
     1
   )
@@ -89717,6 +89762,14 @@ var reports = {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 460 */,
+/* 461 */,
+/* 462 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/logo.png?ed103fce8f77734f0b44cae044314b5f";
 
 /***/ })
 /******/ ]);
