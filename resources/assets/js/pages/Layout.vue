@@ -9,9 +9,17 @@
             <navigation></navigation>
         </Header>
         <Content class="layout-content">
+            <div class="swiper-container" id="slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(../../images/slide.jpg);">
+                        <div class="caption scroll-animation" data-animation="pulse" data-animation-delay="0s">
+                            <h1><span>综合查询系统</span></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <Breadcrumb :style="{margin: '20px 0'}">
-                <BreadcrumbItem>{{userName}}</BreadcrumbItem>
-                <BreadcrumbItem>主页</BreadcrumbItem>
+                <BreadcrumbItem>当前用户：{{ userName }}</BreadcrumbItem>
             </Breadcrumb>
             <router-view class="layout-content-main"></router-view>
         </Content>
