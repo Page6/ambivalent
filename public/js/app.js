@@ -59032,7 +59032,7 @@ __WEBPACK_IMPORTED_MODULE_25_vue___default.a.component('Spin', __WEBPACK_IMPORTE
             name: 'reports',
             component: __WEBPACK_IMPORTED_MODULE_25_vue___default.a.component('Reports', __webpack_require__(413))
         }, {
-            path: 'reports/:id',
+            path: 'report/:id',
             name: 'report',
             component: __WEBPACK_IMPORTED_MODULE_25_vue___default.a.component('Report', __webpack_require__(423))
         }, {
@@ -83493,18 +83493,13 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.login {\n  width: 100%;\n  height: 100%;\n  border: 1px solid #d7dde4;\n  background: #464c5b;\n  background-image: url(" + escape(__webpack_require__(379)) + ");\n  background-size: cover;\n  background-position: center;\n  position: absolute;\n  text-align: center;\n  color: #fff;\n}\n.login-con {\n    position: absolute;\n    right: 160px;\n    top: 50%;\n    -webkit-transform: translateY(-60%);\n            transform: translateY(-60%);\n    width: 300px;\n}\n.login-con-header {\n      font-size: 16px;\n      font-weight: 300;\n      text-align: center;\n      padding: 30px 0;\n}\n.login-con .form-con {\n      padding: 10px 0 0;\n}\n.login-con .login-tip {\n      font-size: 10px;\n      text-align: center;\n      color: #c3c3c3;\n}\n.page-container {\n  margin: 120px auto 0 auto;\n}\nh1 {\n  font-size: 30px;\n  font-weight: 700;\n  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);\n}\nform {\n  position: relative;\n  width: 305px;\n  margin: auto;\n  text-align: center;\n}\n.signin {\n  cursor: pointer;\n  width: 270px;\n  height: 44px;\n  margin-top: 25px;\n  padding: 0;\n  background: #ef4300;\n  border-radius: 6px;\n  border: 1px solid #ff730e;\n  -webkit-box-shadow: 0 15px 30px 0 rgba(255, 255, 255, 0.25) inset, 0 2px 7px 0 rgba(0, 0, 0, 0.2);\n  box-shadow: 0 15px 30px 0 rgba(255, 255, 255, 0.25) inset, 0 2px 7px 0 rgba(0, 0, 0, 0.2);\n  font-family: 'PT Sans', Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  font-weight: 700;\n  color: #fff;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n  -o-transition: all .2s;\n  -moz-transition: all .2s;\n  -webkit-transition: all .2s;\n  -ms-transition: all .2s;\n}\n.signin:hover {\n  -webkit-box-shadow: 0 15px 30px 0 rgba(255, 255, 255, 0.15) inset, 0 2px 7px 0 rgba(0, 0, 0, 0.2);\n  box-shadow: 0 15px 30px 0 rgba(255, 255, 255, 0.15) inset, 0 2px 7px 0 rgba(0, 0, 0, 0.2);\n}\n.signin:active {\n  -webkit-box-shadow: 0 15px 30px 0 rgba(255, 255, 255, 0.15) inset, 0 2px 7px 0 rgba(0, 0, 0, 0.2);\n  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1) inset, 0 1px 4px 0 rgba(0, 0, 0, 0.1);\n  border: 0px solid #ef4300;\n}\n.userinfo {\n  width: 270px;\n  height: 42px;\n  margin-top: 25px;\n  margin-bottom: -25px;\n  margin-left: 15px;\n  padding: 0 15px;\n  background: #2d2d2d;\n  /* browsers that don't support rgba */\n  background: rgba(45, 45, 45, 0.15);\n  border-radius: 6px;\n  border: 1px solid #3d3d3d;\n  /* browsers that don't support rgba */\n  border: 1px solid rgba(255, 255, 255, 0.15);\n  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1) inset;\n  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1) inset;\n  font-size: 14px;\n  color: #fff;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n  -o-transition: all .2s;\n  -moz-transition: all .2s;\n  -webkit-transition: all .2s;\n  -ms-transition: all .2s;\n}\n.userinfo:-moz-placeholder {\n  color: #fff;\n}\n.userinfo:-ms-input-placeholder {\n  color: #fff;\n}\n.userinfo:-webkit-input-placeholder {\n  color: #fff;\n}\n.userinfo:focus {\n  background: rgba(45, 45, 45, 0.15);\n  outline: none;\n  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1) inset, 0 2px 7px 0 rgba(0, 0, 0, 0.2);\n  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1) inset, 0 2px 7px 0 rgba(0, 0, 0, 0.2);\n}\n", ""]);
+exports.push([module.i, "\n.login {\n  width: 100%;\n  height: 100%;\n  border: 1px solid #d7dde4;\n  background: #464c5b;\n  background-image: url(" + escape(__webpack_require__(465)) + ");\n  background-size: cover;\n  background-position: center;\n  position: absolute;\n  text-align: center;\n  color: #fff;\n}\n.login-con {\n    position: absolute;\n    right: 160px;\n    top: 50%;\n    -webkit-transform: translateY(-60%);\n            transform: translateY(-60%);\n    width: 300px;\n}\n.login-con-header {\n      font-size: 16px;\n      font-weight: 300;\n      text-align: center;\n      padding: 30px 0;\n}\n.login-con .form-con {\n      padding: 10px 0 0;\n}\n.login-con .login-tip {\n      font-size: 10px;\n      text-align: center;\n      color: #c3c3c3;\n}\n.page-container {\n  margin: 120px auto 0 auto;\n}\nh1 {\n  font-size: 30px;\n  font-weight: 700;\n  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);\n}\nform {\n  position: relative;\n  width: 305px;\n  margin: auto;\n  text-align: center;\n}\n.signin {\n  cursor: pointer;\n  width: 270px;\n  height: 44px;\n  margin-top: 25px;\n  padding: 0;\n  background: #ef4300;\n  border-radius: 6px;\n  border: 1px solid #ff730e;\n  -webkit-box-shadow: 0 15px 30px 0 rgba(255, 255, 255, 0.25) inset, 0 2px 7px 0 rgba(0, 0, 0, 0.2);\n  box-shadow: 0 15px 30px 0 rgba(255, 255, 255, 0.25) inset, 0 2px 7px 0 rgba(0, 0, 0, 0.2);\n  font-family: 'PT Sans', Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  font-weight: 700;\n  color: #fff;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n  -o-transition: all .2s;\n  -moz-transition: all .2s;\n  -webkit-transition: all .2s;\n  -ms-transition: all .2s;\n}\n.signin:hover {\n  -webkit-box-shadow: 0 15px 30px 0 rgba(255, 255, 255, 0.15) inset, 0 2px 7px 0 rgba(0, 0, 0, 0.2);\n  box-shadow: 0 15px 30px 0 rgba(255, 255, 255, 0.15) inset, 0 2px 7px 0 rgba(0, 0, 0, 0.2);\n}\n.signin:active {\n  -webkit-box-shadow: 0 15px 30px 0 rgba(255, 255, 255, 0.15) inset, 0 2px 7px 0 rgba(0, 0, 0, 0.2);\n  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1) inset, 0 1px 4px 0 rgba(0, 0, 0, 0.1);\n  border: 0px solid #ef4300;\n}\n.userinfo {\n  width: 270px;\n  height: 42px;\n  margin-top: 25px;\n  margin-bottom: -25px;\n  margin-left: 15px;\n  padding: 0 15px;\n  background: #2d2d2d;\n  /* browsers that don't support rgba */\n  background: rgba(45, 45, 45, 0.15);\n  border-radius: 6px;\n  border: 1px solid #3d3d3d;\n  /* browsers that don't support rgba */\n  border: 1px solid rgba(255, 255, 255, 0.15);\n  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1) inset;\n  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1) inset;\n  font-size: 14px;\n  color: #fff;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n  -o-transition: all .2s;\n  -moz-transition: all .2s;\n  -webkit-transition: all .2s;\n  -ms-transition: all .2s;\n}\n.userinfo:-moz-placeholder {\n  color: #fff;\n}\n.userinfo:-ms-input-placeholder {\n  color: #fff;\n}\n.userinfo:-webkit-input-placeholder {\n  color: #fff;\n}\n.userinfo:focus {\n  background: rgba(45, 45, 45, 0.15);\n  outline: none;\n  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1) inset, 0 2px 7px 0 rgba(0, 0, 0, 0.2);\n  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1) inset, 0 2px 7px 0 rgba(0, 0, 0, 0.2);\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 379 */
-/***/ (function(module, exports) {
-
-module.exports = "/images/login-bg.png?c391c2fa7117f7827838a8c6b15eb7e1";
-
-/***/ }),
+/* 379 */,
 /* 380 */
 /***/ (function(module, exports) {
 
@@ -84037,6 +84032,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 
@@ -84048,10 +84045,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         Logo: __WEBPACK_IMPORTED_MODULE_1__components_global_Logo_vue___default.a,
         Copyright: __WEBPACK_IMPORTED_MODULE_2__components_global_Copyright_vue___default.a
     },
+    data: function data() {
+        return {
+            routers: {
+                'home': '综合查询系统',
+                'reports': '报表管理',
+                'report': '报表查询'
+            }
+        };
+    },
+
     computed: {
         // 从 Vuex 中获取用户信息
         userName: function userName() {
             return window.sessionStorage.getItem('userName');
+        },
+        routerName: function routerName() {
+            // return this.$route.path.split('/')[1];
+            return this.routers[this.$route.path.split('/')[1]];
         }
     }
 });
@@ -84755,7 +84766,13 @@ var render = function() {
                           "data-animation-delay": "0s"
                         }
                       },
-                      [_c("h1", [_c("span", [_vm._v("综合查询系统")])])]
+                      [
+                        _vm.routerName == "综合查询系统"
+                          ? _c("h1", [_c("span", [_vm._v("欢迎进入")])])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _c("h1", [_c("span", [_vm._v(_vm._s(_vm.routerName))])])
+                      ]
                     )
                   ]
                 )
@@ -84769,7 +84786,9 @@ var render = function() {
             [
               _c("BreadcrumbItem", [
                 _vm._v("当前用户：" + _vm._s(_vm.userName))
-              ])
+              ]),
+              _vm._v(" "),
+              _c("BreadcrumbItem", [_vm._v(_vm._s(_vm.routerName))])
             ],
             1
           ),
@@ -85147,7 +85166,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 						},
 						on: {
 							click: function click() {
-								_this.$router.push('/reports/' + _this.reportsData[params.row.initRowIndex].id);
+								_this.$router.push('/report/' + _this.reportsData[params.row.initRowIndex].id);
 							}
 						}
 					}, '查询')]);
@@ -89809,6 +89828,14 @@ var reports = {
 /***/ (function(module, exports) {
 
 module.exports = "/images/logo.png?ed103fce8f77734f0b44cae044314b5f";
+
+/***/ }),
+/* 463 */,
+/* 464 */,
+/* 465 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/login-bg.jpg?cddfdb0aec3d8cbafc9d92b7ad7fc92d";
 
 /***/ })
 /******/ ]);

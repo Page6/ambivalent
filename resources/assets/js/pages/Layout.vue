@@ -13,13 +13,15 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" style="background-image:url(../../images/slide.jpg);">
                         <div class="caption scroll-animation" data-animation="pulse" data-animation-delay="0s">
-                            <h1><span>综合查询系统</span></h1>
+                            <h1 v-if="routerName == '综合查询系统'"><span>欢迎进入</span></h1>
+                            <h1><span>{{ routerName }}</span></h1>
                         </div>
                     </div>
                 </div>
             </div>
             <Breadcrumb :style="{margin: '20px 0'}">
                 <BreadcrumbItem>当前用户：{{ userName }}</BreadcrumbItem>
+                <BreadcrumbItem>{{ routerName }}</BreadcrumbItem>
             </Breadcrumb>
             <router-view class="layout-content-main"></router-view>
         </Content>
@@ -40,10 +42,23 @@
             Logo,
             Copyright
         },
+        data () {
+            return {
+                routers: {
+                    'home':'综合查询系统',
+                    'reports':'报表管理',
+                    'report':'报表查询'
+                }
+            }
+        },
         computed: {
             // 从 Vuex 中获取用户信息
             userName: function(){
                 return window.sessionStorage.getItem('userName');
+            },
+            routerName: function(){
+                // return this.$route.path.split('/')[1];
+                return this.routers[this.$route.path.split('/')[1]];
             }
         }
     }

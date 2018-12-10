@@ -50,7 +50,7 @@
 						 			},
 						 			on: {
 						 				click: () => {
-						 					this.$router.push('/reports/'+this.reportsData[params.row.initRowIndex].id);
+						 					this.$router.push('/report/'+this.reportsData[params.row.initRowIndex].id);
 						 				}
 						 			}
 						 		}, '查询')])

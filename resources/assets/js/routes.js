@@ -114,7 +114,7 @@ export default new VueRouter({
                     component: Vue.component( 'Reports', require( './pages/Reports.vue' ) )
                 },
                 {
-                    path: 'reports/:id',
+                    path: 'report/:id',
                     name: 'report',
                     component: Vue.component( 'Report', require( './pages/Report.vue' ) )
                 },
