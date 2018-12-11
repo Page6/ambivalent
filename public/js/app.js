@@ -83997,7 +83997,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-logo-top {\n  width: 200px;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  float: left;\n}\n.layout-title-top {\n  width: 100px;\n  height: 30px;\n  border-radius: 3px;\n  float: left;\n  margin-top: -15px;\n  font-size: 14px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-nav {\n  width: 500px;\n  margin: 0 auto;\n  margin-right: -100px;\n}\n\n/* Swiper Slider */\n.index-page #slide {\n  top: -81px;\n  margin-bottom: -81px;\n}\n.caption {\n  background: #515a6e;\n  padding: 34px;\n}\n.caption h1 {\n  color: #fff;\n  margin: 0;\n  font-weight: 300;\n}\n.caption h1 span {\n  font-weight: 700;\n}\n.swiper-container {\n  margin: 0 auto;\n  position: relative;\n  overflow: hidden;\n  z-index: 1;\n  background: #2b2b2b;\n}\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-transition-property: -webkit-transform;\n  transition-property: -webkit-transform;\n  transition-property: transform;\n  transition-property: transform, -webkit-transform;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\n.swiper-container-vertical > .swiper-wrapper {\n  -webkit-box-orient: vertical;\n  -ms-flex-direction: column;\n  flex-direction: column;\n}\n.swiper-container-android .swiper-slide,\n.swiper-wrapper {\n  -webkit-transform: translate3d(0px, 0, 0);\n  transform: translate3d(0px, 0, 0);\n}\n.swiper-container {\n  width: 100%;\n  height: 15%;\n}\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  /* background-size:cover; */\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n.swiper-slide {\n  -webkit-flex-shrink: 0;\n  -ms-flex: 0 0 auto;\n  -ms-flex-negative: 0;\n      flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n}\n.swiper-slide img {\n  width: 100%;\n  display: block;\n}\n.swiper-top-prev, .swiper-top-next {\n  position: absolute;\n  top: 50%;\n  width: 38px;\n  height: 38px;\n  background: #fff;\n  z-index: 100;\n  text-align: center;\n  line-height: 40px;\n  color: #333;\n  font-size: 11px;\n}\n.swiper-top-prev {\n  left: 0;\n}\n.swiper-top-next {\n  right: 0;\n}\n.swiper-top-prev:hover, .swiper-top-next:hover {\n  background: #536DFE;\n  color: #fff;\n}\n", ""]);
+exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-logo-top {\n  width: 200px;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  float: left;\n}\n.layout-title-top {\n  width: 100px;\n  height: 30px;\n  border-radius: 3px;\n  float: left;\n  margin-top: -15px;\n  font-size: 14px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-nav {\n  width: 500px;\n  margin: 0 auto;\n  margin-right: -100px;\n}\n\n/* Swiper Slider */\n.index-page #slide {\n  top: -81px;\n  margin-bottom: -81px;\n}\n.caption {\n  background: #515a6e;\n  padding: 34px;\n}\n.caption h1 {\n  color: #fff;\n  margin: 0;\n  font-weight: 300;\n}\n.caption h1 span {\n  font-weight: 700;\n}\n.swiper-container {\n  margin: 0 auto;\n  position: relative;\n  overflow: hidden;\n  z-index: 1;\n  background: #2b2b2b;\n}\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-transition-property: -webkit-transform;\n  transition-property: -webkit-transform;\n  transition-property: transform;\n  transition-property: transform, -webkit-transform;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\n.swiper-container-vertical > .swiper-wrapper {\n  -webkit-box-orient: vertical;\n  -ms-flex-direction: column;\n  flex-direction: column;\n}\n.swiper-container-android .swiper-slide,\n.swiper-wrapper {\n  -webkit-transform: translate3d(0px, 0, 0);\n  transform: translate3d(0px, 0, 0);\n}\n.swiper-container {\n  width: 100%;\n  height: 15%;\n}\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  /* background-size:cover; */\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n.swiper-slide {\n  -webkit-flex-shrink: 0;\n  -ms-flex: 0 0 auto;\n  -ms-flex-negative: 0;\n      flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n}\n.swiper-slide img {\n  width: 100%;\n  display: block;\n}\n.swiper-top-prev, .swiper-top-next {\n  position: absolute;\n  top: 50%;\n  width: 38px;\n  height: 38px;\n  background: #fff;\n  z-index: 100;\n  text-align: center;\n  line-height: 40px;\n  color: #333;\n  font-size: 11px;\n}\n.swiper-top-prev {\n  left: 0;\n}\n.swiper-top-next {\n  right: 0;\n}\n.swiper-top-prev:hover, .swiper-top-next:hover {\n  background: #536DFE;\n  color: #fff;\n}\n\n/* index blog */\n.index-image {\n  overflow: hidden;\n  position: relative;\n  padding: 0 !important;\n  background: #515a6e;\n}\n.index-image p {\n  margin: 0 0 32px;\n  color: #fff;\n  font-size: 14px;\n  line-height: 2em;\n}\n.index-image h3 {\n  text-align: left;\n  margin: 0 0 22px;\n  color: #fff;\n}\n.img-left {\n  width: 50%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  background-size: cover;\n}\n.information-right {\n  width: 50%;\n  float: right;\n  padding: 145px 11% 145px 49px;\n  text-align: left;\n}\n.index-image-right .information-right {\n  float: left;\n  text-align: right;\n  padding: 145px 49px 145px 11%;\n}\n.index-image.index-image-right .information-right h3 {\n  text-align: right;\n}\n.index-image-right .img-left {\n  right: 0;\n  left: inherit;\n}\n.information-right .read-more {\n  color: #FFF;\n  border-bottom: 1px solid #fff;\n}\n", ""]);
 
 // exports
 
@@ -84168,7 +84168,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-logo-top {\n  width: 200px;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  float: left;\n}\n.layout-title-top {\n  width: 100px;\n  height: 30px;\n  border-radius: 3px;\n  float: left;\n  margin-top: -15px;\n  font-size: 14px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-nav {\n  width: 500px;\n  margin: 0 auto;\n  margin-right: -100px;\n}\n\n/* Swiper Slider */\n.index-page #slide {\n  top: -81px;\n  margin-bottom: -81px;\n}\n.caption {\n  background: #515a6e;\n  padding: 34px;\n}\n.caption h1 {\n  color: #fff;\n  margin: 0;\n  font-weight: 300;\n}\n.caption h1 span {\n  font-weight: 700;\n}\n.swiper-container {\n  margin: 0 auto;\n  position: relative;\n  overflow: hidden;\n  z-index: 1;\n  background: #2b2b2b;\n}\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-transition-property: -webkit-transform;\n  transition-property: -webkit-transform;\n  transition-property: transform;\n  transition-property: transform, -webkit-transform;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\n.swiper-container-vertical > .swiper-wrapper {\n  -webkit-box-orient: vertical;\n  -ms-flex-direction: column;\n  flex-direction: column;\n}\n.swiper-container-android .swiper-slide,\n.swiper-wrapper {\n  -webkit-transform: translate3d(0px, 0, 0);\n  transform: translate3d(0px, 0, 0);\n}\n.swiper-container {\n  width: 100%;\n  height: 15%;\n}\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  /* background-size:cover; */\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n.swiper-slide {\n  -webkit-flex-shrink: 0;\n  -ms-flex: 0 0 auto;\n  -ms-flex-negative: 0;\n      flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n}\n.swiper-slide img {\n  width: 100%;\n  display: block;\n}\n.swiper-top-prev, .swiper-top-next {\n  position: absolute;\n  top: 50%;\n  width: 38px;\n  height: 38px;\n  background: #fff;\n  z-index: 100;\n  text-align: center;\n  line-height: 40px;\n  color: #333;\n  font-size: 11px;\n}\n.swiper-top-prev {\n  left: 0;\n}\n.swiper-top-next {\n  right: 0;\n}\n.swiper-top-prev:hover, .swiper-top-next:hover {\n  background: #536DFE;\n  color: #fff;\n}\n", ""]);
+exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-logo-top {\n  width: 200px;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  float: left;\n}\n.layout-title-top {\n  width: 100px;\n  height: 30px;\n  border-radius: 3px;\n  float: left;\n  margin-top: -15px;\n  font-size: 14px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-nav {\n  width: 500px;\n  margin: 0 auto;\n  margin-right: -100px;\n}\n\n/* Swiper Slider */\n.index-page #slide {\n  top: -81px;\n  margin-bottom: -81px;\n}\n.caption {\n  background: #515a6e;\n  padding: 34px;\n}\n.caption h1 {\n  color: #fff;\n  margin: 0;\n  font-weight: 300;\n}\n.caption h1 span {\n  font-weight: 700;\n}\n.swiper-container {\n  margin: 0 auto;\n  position: relative;\n  overflow: hidden;\n  z-index: 1;\n  background: #2b2b2b;\n}\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-transition-property: -webkit-transform;\n  transition-property: -webkit-transform;\n  transition-property: transform;\n  transition-property: transform, -webkit-transform;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\n.swiper-container-vertical > .swiper-wrapper {\n  -webkit-box-orient: vertical;\n  -ms-flex-direction: column;\n  flex-direction: column;\n}\n.swiper-container-android .swiper-slide,\n.swiper-wrapper {\n  -webkit-transform: translate3d(0px, 0, 0);\n  transform: translate3d(0px, 0, 0);\n}\n.swiper-container {\n  width: 100%;\n  height: 15%;\n}\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  /* background-size:cover; */\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n.swiper-slide {\n  -webkit-flex-shrink: 0;\n  -ms-flex: 0 0 auto;\n  -ms-flex-negative: 0;\n      flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n}\n.swiper-slide img {\n  width: 100%;\n  display: block;\n}\n.swiper-top-prev, .swiper-top-next {\n  position: absolute;\n  top: 50%;\n  width: 38px;\n  height: 38px;\n  background: #fff;\n  z-index: 100;\n  text-align: center;\n  line-height: 40px;\n  color: #333;\n  font-size: 11px;\n}\n.swiper-top-prev {\n  left: 0;\n}\n.swiper-top-next {\n  right: 0;\n}\n.swiper-top-prev:hover, .swiper-top-next:hover {\n  background: #536DFE;\n  color: #fff;\n}\n\n/* index blog */\n.index-image {\n  overflow: hidden;\n  position: relative;\n  padding: 0 !important;\n  background: #515a6e;\n}\n.index-image p {\n  margin: 0 0 32px;\n  color: #fff;\n  font-size: 14px;\n  line-height: 2em;\n}\n.index-image h3 {\n  text-align: left;\n  margin: 0 0 22px;\n  color: #fff;\n}\n.img-left {\n  width: 50%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  background-size: cover;\n}\n.information-right {\n  width: 50%;\n  float: right;\n  padding: 145px 11% 145px 49px;\n  text-align: left;\n}\n.index-image-right .information-right {\n  float: left;\n  text-align: right;\n  padding: 145px 49px 145px 11%;\n}\n.index-image.index-image-right .information-right h3 {\n  text-align: right;\n}\n.index-image-right .img-left {\n  right: 0;\n  left: inherit;\n}\n.information-right .read-more {\n  color: #FFF;\n  border-bottom: 1px solid #fff;\n}\n", ""]);
 
 // exports
 
@@ -84551,7 +84551,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-logo-top {\n  width: 200px;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  float: left;\n}\n.layout-title-top {\n  width: 100px;\n  height: 30px;\n  border-radius: 3px;\n  float: left;\n  margin-top: -15px;\n  font-size: 14px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-nav {\n  width: 500px;\n  margin: 0 auto;\n  margin-right: -100px;\n}\n\n/* Swiper Slider */\n.index-page #slide {\n  top: -81px;\n  margin-bottom: -81px;\n}\n.caption {\n  background: #515a6e;\n  padding: 34px;\n}\n.caption h1 {\n  color: #fff;\n  margin: 0;\n  font-weight: 300;\n}\n.caption h1 span {\n  font-weight: 700;\n}\n.swiper-container {\n  margin: 0 auto;\n  position: relative;\n  overflow: hidden;\n  z-index: 1;\n  background: #2b2b2b;\n}\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-transition-property: -webkit-transform;\n  transition-property: -webkit-transform;\n  transition-property: transform;\n  transition-property: transform, -webkit-transform;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\n.swiper-container-vertical > .swiper-wrapper {\n  -webkit-box-orient: vertical;\n  -ms-flex-direction: column;\n  flex-direction: column;\n}\n.swiper-container-android .swiper-slide,\n.swiper-wrapper {\n  -webkit-transform: translate3d(0px, 0, 0);\n  transform: translate3d(0px, 0, 0);\n}\n.swiper-container {\n  width: 100%;\n  height: 15%;\n}\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  /* background-size:cover; */\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n.swiper-slide {\n  -webkit-flex-shrink: 0;\n  -ms-flex: 0 0 auto;\n  -ms-flex-negative: 0;\n      flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n}\n.swiper-slide img {\n  width: 100%;\n  display: block;\n}\n.swiper-top-prev, .swiper-top-next {\n  position: absolute;\n  top: 50%;\n  width: 38px;\n  height: 38px;\n  background: #fff;\n  z-index: 100;\n  text-align: center;\n  line-height: 40px;\n  color: #333;\n  font-size: 11px;\n}\n.swiper-top-prev {\n  left: 0;\n}\n.swiper-top-next {\n  right: 0;\n}\n.swiper-top-prev:hover, .swiper-top-next:hover {\n  background: #536DFE;\n  color: #fff;\n}\n", ""]);
+exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-logo-top {\n  width: 200px;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  float: left;\n}\n.layout-title-top {\n  width: 100px;\n  height: 30px;\n  border-radius: 3px;\n  float: left;\n  margin-top: -15px;\n  font-size: 14px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-nav {\n  width: 500px;\n  margin: 0 auto;\n  margin-right: -100px;\n}\n\n/* Swiper Slider */\n.index-page #slide {\n  top: -81px;\n  margin-bottom: -81px;\n}\n.caption {\n  background: #515a6e;\n  padding: 34px;\n}\n.caption h1 {\n  color: #fff;\n  margin: 0;\n  font-weight: 300;\n}\n.caption h1 span {\n  font-weight: 700;\n}\n.swiper-container {\n  margin: 0 auto;\n  position: relative;\n  overflow: hidden;\n  z-index: 1;\n  background: #2b2b2b;\n}\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-transition-property: -webkit-transform;\n  transition-property: -webkit-transform;\n  transition-property: transform;\n  transition-property: transform, -webkit-transform;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\n.swiper-container-vertical > .swiper-wrapper {\n  -webkit-box-orient: vertical;\n  -ms-flex-direction: column;\n  flex-direction: column;\n}\n.swiper-container-android .swiper-slide,\n.swiper-wrapper {\n  -webkit-transform: translate3d(0px, 0, 0);\n  transform: translate3d(0px, 0, 0);\n}\n.swiper-container {\n  width: 100%;\n  height: 15%;\n}\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  /* background-size:cover; */\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n.swiper-slide {\n  -webkit-flex-shrink: 0;\n  -ms-flex: 0 0 auto;\n  -ms-flex-negative: 0;\n      flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n}\n.swiper-slide img {\n  width: 100%;\n  display: block;\n}\n.swiper-top-prev, .swiper-top-next {\n  position: absolute;\n  top: 50%;\n  width: 38px;\n  height: 38px;\n  background: #fff;\n  z-index: 100;\n  text-align: center;\n  line-height: 40px;\n  color: #333;\n  font-size: 11px;\n}\n.swiper-top-prev {\n  left: 0;\n}\n.swiper-top-next {\n  right: 0;\n}\n.swiper-top-prev:hover, .swiper-top-next:hover {\n  background: #536DFE;\n  color: #fff;\n}\n\n/* index blog */\n.index-image {\n  overflow: hidden;\n  position: relative;\n  padding: 0 !important;\n  background: #515a6e;\n}\n.index-image p {\n  margin: 0 0 32px;\n  color: #fff;\n  font-size: 14px;\n  line-height: 2em;\n}\n.index-image h3 {\n  text-align: left;\n  margin: 0 0 22px;\n  color: #fff;\n}\n.img-left {\n  width: 50%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  background-size: cover;\n}\n.information-right {\n  width: 50%;\n  float: right;\n  padding: 145px 11% 145px 49px;\n  text-align: left;\n}\n.index-image-right .information-right {\n  float: left;\n  text-align: right;\n  padding: 145px 49px 145px 11%;\n}\n.index-image.index-image-right .information-right h3 {\n  text-align: right;\n}\n.index-image-right .img-left {\n  right: 0;\n  left: inherit;\n}\n.information-right .read-more {\n  color: #FFF;\n  border-bottom: 1px solid #fff;\n}\n", ""]);
 
 // exports
 
@@ -84692,7 +84692,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-logo-top {\n  width: 200px;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  float: left;\n}\n.layout-title-top {\n  width: 100px;\n  height: 30px;\n  border-radius: 3px;\n  float: left;\n  margin-top: -15px;\n  font-size: 14px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-nav {\n  width: 500px;\n  margin: 0 auto;\n  margin-right: -100px;\n}\n\n/* Swiper Slider */\n.index-page #slide {\n  top: -81px;\n  margin-bottom: -81px;\n}\n.caption {\n  background: #515a6e;\n  padding: 34px;\n}\n.caption h1 {\n  color: #fff;\n  margin: 0;\n  font-weight: 300;\n}\n.caption h1 span {\n  font-weight: 700;\n}\n.swiper-container {\n  margin: 0 auto;\n  position: relative;\n  overflow: hidden;\n  z-index: 1;\n  background: #2b2b2b;\n}\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-transition-property: -webkit-transform;\n  transition-property: -webkit-transform;\n  transition-property: transform;\n  transition-property: transform, -webkit-transform;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\n.swiper-container-vertical > .swiper-wrapper {\n  -webkit-box-orient: vertical;\n  -ms-flex-direction: column;\n  flex-direction: column;\n}\n.swiper-container-android .swiper-slide,\n.swiper-wrapper {\n  -webkit-transform: translate3d(0px, 0, 0);\n  transform: translate3d(0px, 0, 0);\n}\n.swiper-container {\n  width: 100%;\n  height: 15%;\n}\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  /* background-size:cover; */\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n.swiper-slide {\n  -webkit-flex-shrink: 0;\n  -ms-flex: 0 0 auto;\n  -ms-flex-negative: 0;\n      flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n}\n.swiper-slide img {\n  width: 100%;\n  display: block;\n}\n.swiper-top-prev, .swiper-top-next {\n  position: absolute;\n  top: 50%;\n  width: 38px;\n  height: 38px;\n  background: #fff;\n  z-index: 100;\n  text-align: center;\n  line-height: 40px;\n  color: #333;\n  font-size: 11px;\n}\n.swiper-top-prev {\n  left: 0;\n}\n.swiper-top-next {\n  right: 0;\n}\n.swiper-top-prev:hover, .swiper-top-next:hover {\n  background: #536DFE;\n  color: #fff;\n}\n", ""]);
+exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-logo-top {\n  width: 200px;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  float: left;\n}\n.layout-title-top {\n  width: 100px;\n  height: 30px;\n  border-radius: 3px;\n  float: left;\n  margin-top: -15px;\n  font-size: 14px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-nav {\n  width: 500px;\n  margin: 0 auto;\n  margin-right: -100px;\n}\n\n/* Swiper Slider */\n.index-page #slide {\n  top: -81px;\n  margin-bottom: -81px;\n}\n.caption {\n  background: #515a6e;\n  padding: 34px;\n}\n.caption h1 {\n  color: #fff;\n  margin: 0;\n  font-weight: 300;\n}\n.caption h1 span {\n  font-weight: 700;\n}\n.swiper-container {\n  margin: 0 auto;\n  position: relative;\n  overflow: hidden;\n  z-index: 1;\n  background: #2b2b2b;\n}\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-transition-property: -webkit-transform;\n  transition-property: -webkit-transform;\n  transition-property: transform;\n  transition-property: transform, -webkit-transform;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\n.swiper-container-vertical > .swiper-wrapper {\n  -webkit-box-orient: vertical;\n  -ms-flex-direction: column;\n  flex-direction: column;\n}\n.swiper-container-android .swiper-slide,\n.swiper-wrapper {\n  -webkit-transform: translate3d(0px, 0, 0);\n  transform: translate3d(0px, 0, 0);\n}\n.swiper-container {\n  width: 100%;\n  height: 15%;\n}\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  /* background-size:cover; */\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n.swiper-slide {\n  -webkit-flex-shrink: 0;\n  -ms-flex: 0 0 auto;\n  -ms-flex-negative: 0;\n      flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n}\n.swiper-slide img {\n  width: 100%;\n  display: block;\n}\n.swiper-top-prev, .swiper-top-next {\n  position: absolute;\n  top: 50%;\n  width: 38px;\n  height: 38px;\n  background: #fff;\n  z-index: 100;\n  text-align: center;\n  line-height: 40px;\n  color: #333;\n  font-size: 11px;\n}\n.swiper-top-prev {\n  left: 0;\n}\n.swiper-top-next {\n  right: 0;\n}\n.swiper-top-prev:hover, .swiper-top-next:hover {\n  background: #536DFE;\n  color: #fff;\n}\n\n/* index blog */\n.index-image {\n  overflow: hidden;\n  position: relative;\n  padding: 0 !important;\n  background: #515a6e;\n}\n.index-image p {\n  margin: 0 0 32px;\n  color: #fff;\n  font-size: 14px;\n  line-height: 2em;\n}\n.index-image h3 {\n  text-align: left;\n  margin: 0 0 22px;\n  color: #fff;\n}\n.img-left {\n  width: 50%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  background-size: cover;\n}\n.information-right {\n  width: 50%;\n  float: right;\n  padding: 145px 11% 145px 49px;\n  text-align: left;\n}\n.index-image-right .information-right {\n  float: left;\n  text-align: right;\n  padding: 145px 49px 145px 11%;\n}\n.index-image.index-image-right .information-right h3 {\n  text-align: right;\n}\n.index-image-right .img-left {\n  right: 0;\n  left: inherit;\n}\n.information-right .read-more {\n  color: #FFF;\n  border-bottom: 1px solid #fff;\n}\n", ""]);
 
 // exports
 
@@ -84934,6 +84934,26 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
 	created: function created() {
@@ -84965,61 +84985,64 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { attrs: { id: "home" } },
-    [
-      _c("Button", [_vm._v("Home")]),
-      _vm._v(" "),
-      _c(
-        "span",
-        {
-          directives: [
-            {
-              name: "show",
-              rawName: "v-show",
-              value: _vm.cafesLoadStatus == 1,
-              expression: "cafesLoadStatus == 1"
-            }
-          ]
-        },
-        [_vm._v("Loading")]
-      ),
-      _vm._v(" "),
-      _c(
-        "span",
-        {
-          directives: [
-            {
-              name: "show",
-              rawName: "v-show",
-              value: _vm.cafesLoadStatus == 2,
-              expression: "cafesLoadStatus == 2"
-            }
-          ]
-        },
-        [_vm._v("Cafes loaded successfully!")]
-      ),
-      _vm._v(" "),
-      _c(
-        "span",
-        {
-          directives: [
-            {
-              name: "show",
-              rawName: "v-show",
-              value: _vm.cafesLoadStatus == 3,
-              expression: "cafesLoadStatus == 3"
-            }
-          ]
-        },
-        [_vm._v("Cafes loaded unsuccessfully!")]
-      )
-    ],
-    1
-  )
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "home" } }, [
+      _c("section", { staticClass: "index-image" }, [
+        _c("div", { staticClass: "img-left" }, [
+          _c("img", { attrs: { src: __webpack_require__(486) } })
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "information-right scroll-animation",
+            attrs: {
+              "data-animation": "fadeInRight",
+              "data-animation-delay": "0s"
+            }
+          },
+          [
+            _c("h3", [_vm._v("能用来做什么?")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "提供多种报表的统计与下载业务。通过“数据管理”→“报表查询”即可进入。"
+              )
+            ])
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "index-image index-image-right" }, [
+        _c("div", { staticClass: "img-left" }, [
+          _c("img", { attrs: { src: __webpack_require__(487) } })
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "information-right scroll-animation",
+            attrs: {
+              "data-animation": "fadeInLeft",
+              "data-animation-delay": "0s"
+            }
+          },
+          [
+            _c("h3", [_vm._v("对您有什么帮助?")]),
+            _vm._v(" "),
+            _c("p", [_vm._v("主要针对有长期统计需求的人员。")])
+          ]
+        )
+      ])
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -90824,6 +90847,18 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-8402056a", module.exports)
   }
 }
+
+/***/ }),
+/* 486 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/img24.jpg?08a9cc58765a04e2ab18e8393b61659b";
+
+/***/ }),
+/* 487 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/img23.jpg?7f541364ef5701d779de0e0d32c9523a";
 
 /***/ })
 /******/ ]);
