@@ -41,7 +41,7 @@
                     <Icon type="ios-paper"></Icon>
                     报表查询
                 </MenuItem>
-                <MenuItem name="2-2" to="/home">
+                <MenuItem name="2-2" to="/traces">
                     <Icon type="ios-calendar"></Icon>
                     跟踪日志
                 </MenuItem>

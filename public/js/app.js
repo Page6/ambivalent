@@ -59040,6 +59040,10 @@ __WEBPACK_IMPORTED_MODULE_25_vue___default.a.component('Spin', __WEBPACK_IMPORTE
             name: 'resetpassword',
             component: __WEBPACK_IMPORTED_MODULE_25_vue___default.a.component('ResetPassword', __webpack_require__(462))
         }, {
+            path: 'traces',
+            name: 'traces',
+            component: __WEBPACK_IMPORTED_MODULE_25_vue___default.a.component('Traces', __webpack_require__(476))
+        }, {
             path: 'cafes',
             name: 'cafes',
             component: __WEBPACK_IMPORTED_MODULE_25_vue___default.a.component('Cafes', __webpack_require__(434))
@@ -84060,7 +84064,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'home': '综合查询系统',
                 'reports': '报表管理',
                 'report': '报表查询',
-                'password': '密码修改'
+                'password': '密码修改',
+                'traces': '跟踪日志'
             }
         };
     },
@@ -84405,7 +84410,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "MenuItem",
-                { attrs: { name: "2-2", to: "/home" } },
+                { attrs: { name: "2-2", to: "/traces" } },
                 [
                   _c("Icon", { attrs: { type: "ios-calendar" } }),
                   _vm._v("\n                跟踪日志\n            ")
@@ -87030,6 +87035,7 @@ if (false) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modules_brewMethods_js__ = __webpack_require__(454);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__modules_envs_js__ = __webpack_require__(456);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__modules_reports_js__ = __webpack_require__(458);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__modules_admins_js__ = __webpack_require__(474);
 /*
  |-------------------------------------------------------------------------------
  | VUEX store.js
@@ -87063,6 +87069,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex
 
 
 
+
 /**
  * Export the data store.
  */
@@ -87072,7 +87079,8 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex
     cafes: __WEBPACK_IMPORTED_MODULE_2__modules_cafes_js__["a" /* cafes */],
     brewMethods: __WEBPACK_IMPORTED_MODULE_3__modules_brewMethods_js__["a" /* brewMethods */],
     envs: __WEBPACK_IMPORTED_MODULE_4__modules_envs_js__["a" /* envs */],
-    reports: __WEBPACK_IMPORTED_MODULE_5__modules_reports_js__["a" /* reports */]
+    reports: __WEBPACK_IMPORTED_MODULE_5__modules_reports_js__["a" /* reports */],
+    admins: __WEBPACK_IMPORTED_MODULE_6__modules_admins_js__["a" /* admins */]
   }
 }));
 
@@ -90312,6 +90320,524 @@ exports.push([module.i, "\n.page-container {\n  margin: 20px auto 0 auto;\n}\nh1
 
 // exports
 
+
+/***/ }),
+/* 474 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return admins; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__api_admin_js__ = __webpack_require__(475);
+// 在这个文件中管理所有的报表变量，然后在整个应用中使用这些变量。
+/*
+|-------------------------------------------------------------------------------
+| VUEX modules/reports.js
+|-------------------------------------------------------------------------------
+| The Vuex data store for the reports
+*/
+
+// 导入管理员相关 API，使用其中的 API 请求方法来加载数据
+
+
+// 导出一个常量作为报表模块, 这就是要添加到数据存储器的模块
+var admins = {
+	/**
+     * Defines the state being monitored for the module.
+     */
+	// 想要跟踪数据的状态
+	state: {
+		traces: [], // 报表数组
+		tracessLoadStatus: 0 // 加载状态: 0 -> 数据尚未加载, 1 -> 数据开始加载, 2 -> 数据加载成功, 3 -> 数据加载失败
+	},
+	/**
+  * Defines the actions used to retrieve the data.
+  */
+	// 用于被调用来修改状态
+	actions: {
+		loadTraces: function loadTraces(_ref) {
+			var commit = _ref.commit;
+			// 析构参数 commit ，该参数通过 Vuex 传入，允许我们提交 mutations
+			commit('setTracesLoadStatus', 1);
+
+			__WEBPACK_IMPORTED_MODULE_0__api_admin_js__["a" /* default */].getTraces().then(function (response) {
+				commit('setTraces', response.data);
+				commit('setTracesLoadStatus', 2);
+			}).catch(function () {
+				commit('setTraces', []);
+				commit('setTracesLoadStatus', 3);
+			});
+		}
+	},
+	/**
+  * Defines the mutations used
+  */
+	// 定义了数据的更新方式，每个模块都有 state，每个 state 都需要对应的 mutation 来更新
+	mutations: {
+		setTracesLoadStatus: function setTracesLoadStatus(state, status) {
+			state.tracesLoadStatus = status;
+		},
+		setTraces: function setTraces(state, traces) {
+			state.traces = traces;
+		}
+	},
+	/**
+     * Defines the getters used by the module
+     */
+	// 从模块中获取数据
+	getters: {
+		getTracesLoadStatus: function getTracesLoadStatus(state) {
+			return state.tracesLoadStatus;
+		},
+		getTraces: function getTraces(state) {
+			return state.traces;
+		}
+	}
+};
+
+/***/ }),
+/* 475 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config_js__ = __webpack_require__(36);
+/**
+ * Imports the Roast API URL from the config.
+ */
+// 在该文件中引入上一步导出的 ROAST_CONFIG，以便获取 API_URL 来发起请求
+
+
+// 导出一个默认模块以便可以在应用的其它任何地方使用 API 请求
+/* harmony default export */ __webpack_exports__["a"] = ({
+  /**
+      * GET /api/v1/traces
+      */
+  getTraces: function getTraces() {
+    return axios.get(__WEBPACK_IMPORTED_MODULE_0__config_js__["a" /* ROAST_CONFIG */].API_URL + '/traces');
+  }
+});
+
+/***/ }),
+/* 476 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(477)
+}
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(479)
+/* template */
+var __vue_template__ = __webpack_require__(485)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/pages/Traces.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-8402056a", Component.options)
+  } else {
+    hotAPI.reload("data-v-8402056a", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 477 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(478);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(6)("71545848", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-8402056a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Traces.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-8402056a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Traces.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 478 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.search-con {\n  padding: 10px 0;\n}\n.search-con .search-col {\n    display: inline-block;\n    width: 200px;\n}\n.search-con .search-input {\n    display: inline-block;\n    width: 200px;\n    margin-left: 2px;\n}\n.search-con .search-btn {\n    margin-left: 2px;\n    margin-top: -16px;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 479 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_tables_Logs_vue__ = __webpack_require__(480);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_tables_Logs_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_tables_Logs_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+	components: {
+		Logs: __WEBPACK_IMPORTED_MODULE_0__components_tables_Logs_vue___default.a
+	},
+	data: function data() {
+		return {
+			columns: [{
+				type: 'index',
+				width: 60,
+				align: 'center'
+			}, {
+				title: '用户',
+				key: 'operator',
+				width: 200,
+				align: 'center'
+			}, {
+				title: '操作时间',
+				key: 'operated_at',
+				width: 200,
+				align: 'center'
+			}, {
+				title: '报表',
+				key: 'report',
+				width: 200,
+				align: 'center'
+			}, {
+				title: '查询参数',
+				key: 'params',
+				align: 'center'
+			}]
+		};
+	},
+	created: function created() {
+		this.$store.dispatch('loadTraces');
+	},
+
+	/**
+ * 定义组件的计算属性
+ */
+	computed: {
+		// 获取 cafes
+		tracesData: function tracesData() {
+			return this.$store.getters.getTraces;
+		}
+	}
+});
+
+/***/ }),
+/* 480 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(481)
+}
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(483)
+/* template */
+var __vue_template__ = __webpack_require__(484)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/tables/Logs.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-5b940b1c", Component.options)
+  } else {
+    hotAPI.reload("data-v-5b940b1c", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 481 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(482);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(6)("310d5567", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-5b940b1c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/sass-loader/lib/loader.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Logs.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-5b940b1c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/sass-loader/lib/loader.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Logs.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 482 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.search-con {\n  padding: 10px 0;\n}\n.search-con .search-col {\n    display: inline-block;\n    width: 200px;\n}\n.search-con .search-input {\n    display: inline-block;\n    width: 200px;\n    margin-left: 2px;\n}\n.search-con .search-btn {\n    margin-left: 2px;\n    margin-top: -16px;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 483 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+	props: {
+		value: {
+			type: Array,
+			default: function _default() {
+				return [];
+			}
+		},
+		columns: {
+			type: Array,
+			default: function _default() {
+				return [];
+			}
+		}
+	},
+	data: function data() {
+		return {
+			insideColumns: [],
+			insideTableData: [],
+			searchValue: '',
+			searchKey: ''
+		};
+	},
+
+	computed: {},
+	methods: {
+		handleColumns: function handleColumns(columns) {
+			this.insideColumns = columns.map(function (item, index) {
+				var res = item;
+				return res;
+			});
+		},
+		setDefaultSearchKey: function setDefaultSearchKey() {
+			this.searchKey = this.columns[2].key;
+		},
+		handleClear: function handleClear(e) {
+			if (e.target.value === '') this.insideTableData = this.value;
+		},
+
+		handleSearch: function handleSearch() {
+			var _this = this;
+
+			this.insideTableData = this.value.filter(function (item) {
+				return item[_this.searchKey].indexOf(_this.searchValue) > -1;
+			});
+		},
+		handleTableData: function handleTableData() {
+			this.insideTableData = this.value.map(function (item, index) {
+				var res = item;
+				res.initRowIndex = index;
+				return res;
+			});
+		},
+		onFilterChange: function onFilterChange(row) {
+			this.$emit('on-filter-change', row);
+		}
+	},
+	watch: {
+		columns: function columns(_columns) {
+			this.handleColumns(_columns);
+			this.setDefaultSearchKey();
+		},
+		value: function value(val) {
+			this.handleTableData();
+			this.handleSearch();
+		}
+	},
+	mounted: function mounted() {
+		this.handleColumns(this.columns);
+		this.setDefaultSearchKey();
+		this.handleTableData();
+	}
+});
+
+/***/ }),
+/* 484 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    [
+      _c("Table", {
+        attrs: {
+          data: _vm.insideTableData,
+          columns: _vm.insideColumns,
+          height: "800"
+        },
+        on: { "on-filter-change": _vm.onFilterChange }
+      })
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-5b940b1c", module.exports)
+  }
+}
+
+/***/ }),
+/* 485 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    [
+      _c(
+        "Card",
+        [
+          _c("logs", {
+            ref: "tables",
+            attrs: { columns: _vm.columns },
+            model: {
+              value: _vm.tracesData,
+              callback: function($$v) {
+                _vm.tracesData = $$v
+              },
+              expression: "tracesData"
+            }
+          })
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-8402056a", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

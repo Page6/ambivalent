@@ -142,6 +142,17 @@ Route::group(['prefix' => 'v1'], function(){
      | Description:    Resets password in the application
     */
     Route::post('/password', 'API\EnvsController@postPassword');
+
+    /*
+     |-------------------------------------------------------------------------------
+     | Get All Traces
+     |-------------------------------------------------------------------------------
+     | URL:            /api/v1/traces
+     | Controller:     API\AdminsController@getTraces
+     | Method:         GET
+     | Description:    Gets all of the traces in the application
+    */
+    Route::get('/traces', 'API\AdminsController@getTraces');
 });
 
 // 私有路由，需要登录才能访问

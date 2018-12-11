@@ -124,6 +124,11 @@ export default new VueRouter({
                     component: Vue.component( 'ResetPassword', require( './pages/ResetPassword.vue' ) )
                 },
                 {
+                    path: 'traces',
+                    name: 'traces',
+                    component: Vue.component( 'Traces', require( './pages/Traces.vue' ) )
+                },
+                {
                     path: 'cafes',
                     name: 'cafes',
                     component: Vue.component( 'Cafes', require( './pages/Cafes.vue' ) ),

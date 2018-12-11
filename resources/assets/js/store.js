@@ -30,6 +30,7 @@ import { cafes } from './modules/cafes.js';
 import { brewMethods } from './modules/brewMethods.js';
 import { envs } from './modules/envs.js';
 import { reports } from './modules/reports.js'
+import { admins } from './modules/admins.js'
 
 /**
  * Export the data store.
@@ -40,6 +41,7 @@ export default new Vuex.Store({
     	cafes,
     	brewMethods,
     	envs,
-    	reports
+    	reports,
+    	admins
     }
 });
