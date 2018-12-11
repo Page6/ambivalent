@@ -83997,7 +83997,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-logo-top {\n  width: 200px;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  float: left;\n}\n.layout-title-top {\n  width: 100px;\n  height: 30px;\n  border-radius: 3px;\n  float: left;\n  margin-top: -15px;\n  font-size: 14px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-nav {\n  width: 100%;\n  margin: 0 auto;\n  margin-right: -120px;\n}\n\n/* Swiper Slider */\n.index-page #slide {\n  top: -81px;\n  margin-bottom: -81px;\n}\n.caption {\n  background: #515a6e;\n  padding: 34px;\n}\n.caption h1 {\n  color: #fff;\n  margin: 0;\n  font-weight: 300;\n}\n.caption h1 span {\n  font-weight: 700;\n}\n.swiper-container {\n  margin: 0 auto;\n  position: relative;\n  overflow: hidden;\n  z-index: 1;\n  background: #2b2b2b;\n}\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-transition-property: -webkit-transform;\n  transition-property: -webkit-transform;\n  transition-property: transform;\n  transition-property: transform, -webkit-transform;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\n.swiper-container-vertical > .swiper-wrapper {\n  -webkit-box-orient: vertical;\n  -ms-flex-direction: column;\n  flex-direction: column;\n}\n.swiper-container-android .swiper-slide,\n.swiper-wrapper {\n  -webkit-transform: translate3d(0px, 0, 0);\n  transform: translate3d(0px, 0, 0);\n}\n.swiper-container {\n  width: 100%;\n  height: 15%;\n}\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  /* background-size:cover; */\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n.swiper-slide {\n  -webkit-flex-shrink: 0;\n  -ms-flex: 0 0 auto;\n  -ms-flex-negative: 0;\n      flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n}\n.swiper-slide img {\n  width: 100%;\n  display: block;\n}\n.swiper-top-prev, .swiper-top-next {\n  position: absolute;\n  top: 50%;\n  width: 38px;\n  height: 38px;\n  background: #fff;\n  z-index: 100;\n  text-align: center;\n  line-height: 40px;\n  color: #333;\n  font-size: 11px;\n}\n.swiper-top-prev {\n  left: 0;\n}\n.swiper-top-next {\n  right: 0;\n}\n.swiper-top-prev:hover, .swiper-top-next:hover {\n  background: #536DFE;\n  color: #fff;\n}\n", ""]);
+exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-logo-top {\n  width: 200px;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  float: left;\n}\n.layout-title-top {\n  width: 100px;\n  height: 30px;\n  border-radius: 3px;\n  float: left;\n  margin-top: -15px;\n  font-size: 14px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-nav {\n  width: 500px;\n  margin: 0 auto;\n  margin-right: -100px;\n}\n\n/* Swiper Slider */\n.index-page #slide {\n  top: -81px;\n  margin-bottom: -81px;\n}\n.caption {\n  background: #515a6e;\n  padding: 34px;\n}\n.caption h1 {\n  color: #fff;\n  margin: 0;\n  font-weight: 300;\n}\n.caption h1 span {\n  font-weight: 700;\n}\n.swiper-container {\n  margin: 0 auto;\n  position: relative;\n  overflow: hidden;\n  z-index: 1;\n  background: #2b2b2b;\n}\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-transition-property: -webkit-transform;\n  transition-property: -webkit-transform;\n  transition-property: transform;\n  transition-property: transform, -webkit-transform;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\n.swiper-container-vertical > .swiper-wrapper {\n  -webkit-box-orient: vertical;\n  -ms-flex-direction: column;\n  flex-direction: column;\n}\n.swiper-container-android .swiper-slide,\n.swiper-wrapper {\n  -webkit-transform: translate3d(0px, 0, 0);\n  transform: translate3d(0px, 0, 0);\n}\n.swiper-container {\n  width: 100%;\n  height: 15%;\n}\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  /* background-size:cover; */\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n.swiper-slide {\n  -webkit-flex-shrink: 0;\n  -ms-flex: 0 0 auto;\n  -ms-flex-negative: 0;\n      flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n}\n.swiper-slide img {\n  width: 100%;\n  display: block;\n}\n.swiper-top-prev, .swiper-top-next {\n  position: absolute;\n  top: 50%;\n  width: 38px;\n  height: 38px;\n  background: #fff;\n  z-index: 100;\n  text-align: center;\n  line-height: 40px;\n  color: #333;\n  font-size: 11px;\n}\n.swiper-top-prev {\n  left: 0;\n}\n.swiper-top-next {\n  right: 0;\n}\n.swiper-top-prev:hover, .swiper-top-next:hover {\n  background: #536DFE;\n  color: #fff;\n}\n", ""]);
 
 // exports
 
@@ -84168,7 +84168,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-logo-top {\n  width: 200px;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  float: left;\n}\n.layout-title-top {\n  width: 100px;\n  height: 30px;\n  border-radius: 3px;\n  float: left;\n  margin-top: -15px;\n  font-size: 14px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-nav {\n  width: 100%;\n  margin: 0 auto;\n  margin-right: -120px;\n}\n\n/* Swiper Slider */\n.index-page #slide {\n  top: -81px;\n  margin-bottom: -81px;\n}\n.caption {\n  background: #515a6e;\n  padding: 34px;\n}\n.caption h1 {\n  color: #fff;\n  margin: 0;\n  font-weight: 300;\n}\n.caption h1 span {\n  font-weight: 700;\n}\n.swiper-container {\n  margin: 0 auto;\n  position: relative;\n  overflow: hidden;\n  z-index: 1;\n  background: #2b2b2b;\n}\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-transition-property: -webkit-transform;\n  transition-property: -webkit-transform;\n  transition-property: transform;\n  transition-property: transform, -webkit-transform;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\n.swiper-container-vertical > .swiper-wrapper {\n  -webkit-box-orient: vertical;\n  -ms-flex-direction: column;\n  flex-direction: column;\n}\n.swiper-container-android .swiper-slide,\n.swiper-wrapper {\n  -webkit-transform: translate3d(0px, 0, 0);\n  transform: translate3d(0px, 0, 0);\n}\n.swiper-container {\n  width: 100%;\n  height: 15%;\n}\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  /* background-size:cover; */\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n.swiper-slide {\n  -webkit-flex-shrink: 0;\n  -ms-flex: 0 0 auto;\n  -ms-flex-negative: 0;\n      flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n}\n.swiper-slide img {\n  width: 100%;\n  display: block;\n}\n.swiper-top-prev, .swiper-top-next {\n  position: absolute;\n  top: 50%;\n  width: 38px;\n  height: 38px;\n  background: #fff;\n  z-index: 100;\n  text-align: center;\n  line-height: 40px;\n  color: #333;\n  font-size: 11px;\n}\n.swiper-top-prev {\n  left: 0;\n}\n.swiper-top-next {\n  right: 0;\n}\n.swiper-top-prev:hover, .swiper-top-next:hover {\n  background: #536DFE;\n  color: #fff;\n}\n", ""]);
+exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-logo-top {\n  width: 200px;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  float: left;\n}\n.layout-title-top {\n  width: 100px;\n  height: 30px;\n  border-radius: 3px;\n  float: left;\n  margin-top: -15px;\n  font-size: 14px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-nav {\n  width: 500px;\n  margin: 0 auto;\n  margin-right: -100px;\n}\n\n/* Swiper Slider */\n.index-page #slide {\n  top: -81px;\n  margin-bottom: -81px;\n}\n.caption {\n  background: #515a6e;\n  padding: 34px;\n}\n.caption h1 {\n  color: #fff;\n  margin: 0;\n  font-weight: 300;\n}\n.caption h1 span {\n  font-weight: 700;\n}\n.swiper-container {\n  margin: 0 auto;\n  position: relative;\n  overflow: hidden;\n  z-index: 1;\n  background: #2b2b2b;\n}\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-transition-property: -webkit-transform;\n  transition-property: -webkit-transform;\n  transition-property: transform;\n  transition-property: transform, -webkit-transform;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\n.swiper-container-vertical > .swiper-wrapper {\n  -webkit-box-orient: vertical;\n  -ms-flex-direction: column;\n  flex-direction: column;\n}\n.swiper-container-android .swiper-slide,\n.swiper-wrapper {\n  -webkit-transform: translate3d(0px, 0, 0);\n  transform: translate3d(0px, 0, 0);\n}\n.swiper-container {\n  width: 100%;\n  height: 15%;\n}\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  /* background-size:cover; */\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n.swiper-slide {\n  -webkit-flex-shrink: 0;\n  -ms-flex: 0 0 auto;\n  -ms-flex-negative: 0;\n      flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n}\n.swiper-slide img {\n  width: 100%;\n  display: block;\n}\n.swiper-top-prev, .swiper-top-next {\n  position: absolute;\n  top: 50%;\n  width: 38px;\n  height: 38px;\n  background: #fff;\n  z-index: 100;\n  text-align: center;\n  line-height: 40px;\n  color: #333;\n  font-size: 11px;\n}\n.swiper-top-prev {\n  left: 0;\n}\n.swiper-top-next {\n  right: 0;\n}\n.swiper-top-prev:hover, .swiper-top-next:hover {\n  background: #536DFE;\n  color: #fff;\n}\n", ""]);
 
 // exports
 
@@ -84179,10 +84179,6 @@ exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
 //
 //
 //
@@ -84317,6 +84313,77 @@ var render = function() {
         [
           _c(
             "Submenu",
+            { attrs: { name: "3" } },
+            [
+              _c(
+                "template",
+                { slot: "title" },
+                [
+                  _c("Icon", { attrs: { type: "ios-cloud-upload" } }),
+                  _vm._v("\n                上传管理\n            ")
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "MenuItem",
+                { attrs: { name: "3-1" } },
+                [
+                  _c("Icon", { attrs: { type: "ios-folder" } }),
+                  _vm._v("\n                文件更新\n            ")
+                ],
+                1
+              )
+            ],
+            2
+          ),
+          _vm._v(" "),
+          _c(
+            "Submenu",
+            { attrs: { name: "2" } },
+            [
+              _c(
+                "template",
+                { slot: "title" },
+                [
+                  _c("Icon", { attrs: { type: "ios-search" } }),
+                  _vm._v("\n                数据管理\n            ")
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "MenuItem",
+                {
+                  attrs: { name: "2-1" },
+                  nativeOn: {
+                    click: function($event) {
+                      return _vm.loadReports($event)
+                    }
+                  }
+                },
+                [
+                  _c("Icon", { attrs: { type: "ios-paper" } }),
+                  _vm._v("\n                报表查询\n            ")
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "MenuItem",
+                { attrs: { name: "2-2", to: "/traces" } },
+                [
+                  _c("Icon", { attrs: { type: "ios-calendar" } }),
+                  _vm._v("\n                跟踪日志\n            ")
+                ],
+                1
+              )
+            ],
+            2
+          ),
+          _vm._v(" "),
+          _c(
+            "Submenu",
             { attrs: { name: "1" } },
             [
               _c(
@@ -84372,87 +84439,6 @@ var render = function() {
                   }
                 },
                 [_c("p", [_vm._v("是否退出系统？")])]
-              )
-            ],
-            2
-          ),
-          _vm._v(" "),
-          _c(
-            "Submenu",
-            { attrs: { name: "2" } },
-            [
-              _c(
-                "template",
-                { slot: "title" },
-                [
-                  _c("Icon", { attrs: { type: "ios-search" } }),
-                  _vm._v("\n                数据管理\n            ")
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "MenuItem",
-                {
-                  attrs: { name: "2-1" },
-                  nativeOn: {
-                    click: function($event) {
-                      return _vm.loadReports($event)
-                    }
-                  }
-                },
-                [
-                  _c("Icon", { attrs: { type: "ios-paper" } }),
-                  _vm._v("\n                报表查询\n            ")
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "MenuItem",
-                { attrs: { name: "2-2", to: "/traces" } },
-                [
-                  _c("Icon", { attrs: { type: "ios-calendar" } }),
-                  _vm._v("\n                跟踪日志\n            ")
-                ],
-                1
-              )
-            ],
-            2
-          ),
-          _vm._v(" "),
-          _c(
-            "Submenu",
-            { attrs: { name: "3" } },
-            [
-              _c(
-                "template",
-                { slot: "title" },
-                [
-                  _c("Icon", { attrs: { type: "ios-folder" } }),
-                  _vm._v("\n                上传管理\n            ")
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "MenuItem",
-                { attrs: { name: "3-1" } },
-                [
-                  _c("Icon", { attrs: { type: "ios-cloud-upload" } }),
-                  _vm._v("\n                系统更新\n            ")
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "MenuItem",
-                { attrs: { name: "3-2" } },
-                [
-                  _c("Icon", { attrs: { type: "ios-podium" } }),
-                  _vm._v("\n                数据更新\n            ")
-                ],
-                1
               )
             ],
             2
@@ -84565,7 +84551,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-logo-top {\n  width: 200px;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  float: left;\n}\n.layout-title-top {\n  width: 100px;\n  height: 30px;\n  border-radius: 3px;\n  float: left;\n  margin-top: -15px;\n  font-size: 14px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-nav {\n  width: 100%;\n  margin: 0 auto;\n  margin-right: -120px;\n}\n\n/* Swiper Slider */\n.index-page #slide {\n  top: -81px;\n  margin-bottom: -81px;\n}\n.caption {\n  background: #515a6e;\n  padding: 34px;\n}\n.caption h1 {\n  color: #fff;\n  margin: 0;\n  font-weight: 300;\n}\n.caption h1 span {\n  font-weight: 700;\n}\n.swiper-container {\n  margin: 0 auto;\n  position: relative;\n  overflow: hidden;\n  z-index: 1;\n  background: #2b2b2b;\n}\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-transition-property: -webkit-transform;\n  transition-property: -webkit-transform;\n  transition-property: transform;\n  transition-property: transform, -webkit-transform;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\n.swiper-container-vertical > .swiper-wrapper {\n  -webkit-box-orient: vertical;\n  -ms-flex-direction: column;\n  flex-direction: column;\n}\n.swiper-container-android .swiper-slide,\n.swiper-wrapper {\n  -webkit-transform: translate3d(0px, 0, 0);\n  transform: translate3d(0px, 0, 0);\n}\n.swiper-container {\n  width: 100%;\n  height: 15%;\n}\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  /* background-size:cover; */\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n.swiper-slide {\n  -webkit-flex-shrink: 0;\n  -ms-flex: 0 0 auto;\n  -ms-flex-negative: 0;\n      flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n}\n.swiper-slide img {\n  width: 100%;\n  display: block;\n}\n.swiper-top-prev, .swiper-top-next {\n  position: absolute;\n  top: 50%;\n  width: 38px;\n  height: 38px;\n  background: #fff;\n  z-index: 100;\n  text-align: center;\n  line-height: 40px;\n  color: #333;\n  font-size: 11px;\n}\n.swiper-top-prev {\n  left: 0;\n}\n.swiper-top-next {\n  right: 0;\n}\n.swiper-top-prev:hover, .swiper-top-next:hover {\n  background: #536DFE;\n  color: #fff;\n}\n", ""]);
+exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-logo-top {\n  width: 200px;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  float: left;\n}\n.layout-title-top {\n  width: 100px;\n  height: 30px;\n  border-radius: 3px;\n  float: left;\n  margin-top: -15px;\n  font-size: 14px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-nav {\n  width: 500px;\n  margin: 0 auto;\n  margin-right: -100px;\n}\n\n/* Swiper Slider */\n.index-page #slide {\n  top: -81px;\n  margin-bottom: -81px;\n}\n.caption {\n  background: #515a6e;\n  padding: 34px;\n}\n.caption h1 {\n  color: #fff;\n  margin: 0;\n  font-weight: 300;\n}\n.caption h1 span {\n  font-weight: 700;\n}\n.swiper-container {\n  margin: 0 auto;\n  position: relative;\n  overflow: hidden;\n  z-index: 1;\n  background: #2b2b2b;\n}\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-transition-property: -webkit-transform;\n  transition-property: -webkit-transform;\n  transition-property: transform;\n  transition-property: transform, -webkit-transform;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\n.swiper-container-vertical > .swiper-wrapper {\n  -webkit-box-orient: vertical;\n  -ms-flex-direction: column;\n  flex-direction: column;\n}\n.swiper-container-android .swiper-slide,\n.swiper-wrapper {\n  -webkit-transform: translate3d(0px, 0, 0);\n  transform: translate3d(0px, 0, 0);\n}\n.swiper-container {\n  width: 100%;\n  height: 15%;\n}\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  /* background-size:cover; */\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n.swiper-slide {\n  -webkit-flex-shrink: 0;\n  -ms-flex: 0 0 auto;\n  -ms-flex-negative: 0;\n      flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n}\n.swiper-slide img {\n  width: 100%;\n  display: block;\n}\n.swiper-top-prev, .swiper-top-next {\n  position: absolute;\n  top: 50%;\n  width: 38px;\n  height: 38px;\n  background: #fff;\n  z-index: 100;\n  text-align: center;\n  line-height: 40px;\n  color: #333;\n  font-size: 11px;\n}\n.swiper-top-prev {\n  left: 0;\n}\n.swiper-top-next {\n  right: 0;\n}\n.swiper-top-prev:hover, .swiper-top-next:hover {\n  background: #536DFE;\n  color: #fff;\n}\n", ""]);
 
 // exports
 
@@ -84706,7 +84692,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-logo-top {\n  width: 200px;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  float: left;\n}\n.layout-title-top {\n  width: 100px;\n  height: 30px;\n  border-radius: 3px;\n  float: left;\n  margin-top: -15px;\n  font-size: 14px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-nav {\n  width: 100%;\n  margin: 0 auto;\n  margin-right: -120px;\n}\n\n/* Swiper Slider */\n.index-page #slide {\n  top: -81px;\n  margin-bottom: -81px;\n}\n.caption {\n  background: #515a6e;\n  padding: 34px;\n}\n.caption h1 {\n  color: #fff;\n  margin: 0;\n  font-weight: 300;\n}\n.caption h1 span {\n  font-weight: 700;\n}\n.swiper-container {\n  margin: 0 auto;\n  position: relative;\n  overflow: hidden;\n  z-index: 1;\n  background: #2b2b2b;\n}\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-transition-property: -webkit-transform;\n  transition-property: -webkit-transform;\n  transition-property: transform;\n  transition-property: transform, -webkit-transform;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\n.swiper-container-vertical > .swiper-wrapper {\n  -webkit-box-orient: vertical;\n  -ms-flex-direction: column;\n  flex-direction: column;\n}\n.swiper-container-android .swiper-slide,\n.swiper-wrapper {\n  -webkit-transform: translate3d(0px, 0, 0);\n  transform: translate3d(0px, 0, 0);\n}\n.swiper-container {\n  width: 100%;\n  height: 15%;\n}\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  /* background-size:cover; */\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n.swiper-slide {\n  -webkit-flex-shrink: 0;\n  -ms-flex: 0 0 auto;\n  -ms-flex-negative: 0;\n      flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n}\n.swiper-slide img {\n  width: 100%;\n  display: block;\n}\n.swiper-top-prev, .swiper-top-next {\n  position: absolute;\n  top: 50%;\n  width: 38px;\n  height: 38px;\n  background: #fff;\n  z-index: 100;\n  text-align: center;\n  line-height: 40px;\n  color: #333;\n  font-size: 11px;\n}\n.swiper-top-prev {\n  left: 0;\n}\n.swiper-top-next {\n  right: 0;\n}\n.swiper-top-prev:hover, .swiper-top-next:hover {\n  background: #536DFE;\n  color: #fff;\n}\n", ""]);
+exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-logo-top {\n  width: 200px;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  float: left;\n}\n.layout-title-top {\n  width: 100px;\n  height: 30px;\n  border-radius: 3px;\n  float: left;\n  margin-top: -15px;\n  font-size: 14px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-nav {\n  width: 500px;\n  margin: 0 auto;\n  margin-right: -100px;\n}\n\n/* Swiper Slider */\n.index-page #slide {\n  top: -81px;\n  margin-bottom: -81px;\n}\n.caption {\n  background: #515a6e;\n  padding: 34px;\n}\n.caption h1 {\n  color: #fff;\n  margin: 0;\n  font-weight: 300;\n}\n.caption h1 span {\n  font-weight: 700;\n}\n.swiper-container {\n  margin: 0 auto;\n  position: relative;\n  overflow: hidden;\n  z-index: 1;\n  background: #2b2b2b;\n}\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-transition-property: -webkit-transform;\n  transition-property: -webkit-transform;\n  transition-property: transform;\n  transition-property: transform, -webkit-transform;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\n.swiper-container-vertical > .swiper-wrapper {\n  -webkit-box-orient: vertical;\n  -ms-flex-direction: column;\n  flex-direction: column;\n}\n.swiper-container-android .swiper-slide,\n.swiper-wrapper {\n  -webkit-transform: translate3d(0px, 0, 0);\n  transform: translate3d(0px, 0, 0);\n}\n.swiper-container {\n  width: 100%;\n  height: 15%;\n}\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  /* background-size:cover; */\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n.swiper-slide {\n  -webkit-flex-shrink: 0;\n  -ms-flex: 0 0 auto;\n  -ms-flex-negative: 0;\n      flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n}\n.swiper-slide img {\n  width: 100%;\n  display: block;\n}\n.swiper-top-prev, .swiper-top-next {\n  position: absolute;\n  top: 50%;\n  width: 38px;\n  height: 38px;\n  background: #fff;\n  z-index: 100;\n  text-align: center;\n  line-height: 40px;\n  color: #333;\n  font-size: 11px;\n}\n.swiper-top-prev {\n  left: 0;\n}\n.swiper-top-next {\n  right: 0;\n}\n.swiper-top-prev:hover, .swiper-top-next:hover {\n  background: #536DFE;\n  color: #fff;\n}\n", ""]);
 
 // exports
 

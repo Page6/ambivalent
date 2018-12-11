@@ -9,6 +9,30 @@
             </a>
         </div>
         <div class="layout-nav">
+            <Submenu name="3">
+                <template slot="title">
+                    <Icon type="ios-cloud-upload"></Icon>
+                    上传管理
+                </template>
+                <MenuItem name="3-1">
+                    <Icon type="ios-folder"></Icon>
+                    文件更新
+                </MenuItem>
+            </Submenu>
+            <Submenu name="2">
+                <template slot="title">
+                    <Icon type="ios-search"></Icon>
+                    数据管理
+                </template>
+                <MenuItem name="2-1" @click.native="loadReports">
+                    <Icon type="ios-paper"></Icon>
+                    报表查询
+                </MenuItem>
+                <MenuItem name="2-2" to="/traces">
+                    <Icon type="ios-calendar"></Icon>
+                    跟踪日志
+                </MenuItem>
+            </Submenu>
             <Submenu name="1">
                 <template slot="title">
                     <Icon type="ios-contact"></Icon>
@@ -31,34 +55,6 @@
                     @on-cancel="cancel">
                     <p>是否退出系统？</p>
                 </Modal>
-            </Submenu>
-            <Submenu name="2">
-                <template slot="title">
-                    <Icon type="ios-search"></Icon>
-                    数据管理
-                </template>
-                <MenuItem name="2-1" @click.native="loadReports">
-                    <Icon type="ios-paper"></Icon>
-                    报表查询
-                </MenuItem>
-                <MenuItem name="2-2" to="/traces">
-                    <Icon type="ios-calendar"></Icon>
-                    跟踪日志
-                </MenuItem>
-            </Submenu>
-            <Submenu name="3">
-                <template slot="title">
-                    <Icon type="ios-folder"></Icon>
-                    上传管理
-                </template>
-                <MenuItem name="3-1">
-                    <Icon type="ios-cloud-upload"></Icon>
-                    系统更新
-                </MenuItem>
-                <MenuItem name="3-2">
-                    <Icon type="ios-podium"></Icon>
-                    数据更新
-                </MenuItem>
             </Submenu>
         </div>
     </Menu>
