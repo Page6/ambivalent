@@ -59036,6 +59036,10 @@ __WEBPACK_IMPORTED_MODULE_25_vue___default.a.component('Spin', __WEBPACK_IMPORTE
             name: 'report',
             component: __WEBPACK_IMPORTED_MODULE_25_vue___default.a.component('Report', __webpack_require__(424))
         }, {
+            path: 'password/reset',
+            name: 'resetpassword',
+            component: __WEBPACK_IMPORTED_MODULE_25_vue___default.a.component('ResetPassword', __webpack_require__(462))
+        }, {
             path: 'cafes',
             name: 'cafes',
             component: __WEBPACK_IMPORTED_MODULE_25_vue___default.a.component('Cafes', __webpack_require__(434))
@@ -83989,7 +83993,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-logo-top {\n  width: 200px;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  float: left;\n}\n.layout-title-top {\n  width: 100px;\n  height: 30px;\n  border-radius: 3px;\n  float: left;\n  margin-top: -15px;\n  font-size: 14px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-nav {\n  width: 520px;\n  margin: 0 auto;\n  margin-right: -120px;\n}\n\n/* Swiper Slider */\n.index-page #slide {\n  top: -81px;\n  margin-bottom: -81px;\n}\n.caption {\n  background: #515a6e;\n  padding: 34px;\n}\n.caption h1 {\n  color: #fff;\n  margin: 0;\n  font-weight: 300;\n}\n.caption h1 span {\n  font-weight: 700;\n}\n.swiper-container {\n  margin: 0 auto;\n  position: relative;\n  overflow: hidden;\n  z-index: 1;\n  background: #2b2b2b;\n}\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-transition-property: -webkit-transform;\n  transition-property: -webkit-transform;\n  transition-property: transform;\n  transition-property: transform, -webkit-transform;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\n.swiper-container-vertical > .swiper-wrapper {\n  -webkit-box-orient: vertical;\n  -ms-flex-direction: column;\n  flex-direction: column;\n}\n.swiper-container-android .swiper-slide,\n.swiper-wrapper {\n  -webkit-transform: translate3d(0px, 0, 0);\n  transform: translate3d(0px, 0, 0);\n}\n.swiper-container {\n  width: 100%;\n  height: 100%;\n}\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  /* background-size:cover; */\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n.swiper-slide {\n  -webkit-flex-shrink: 0;\n  -ms-flex: 0 0 auto;\n  -ms-flex-negative: 0;\n      flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n}\n.swiper-slide img {\n  width: 100%;\n  display: block;\n}\n.swiper-top-prev, .swiper-top-next {\n  position: absolute;\n  top: 50%;\n  width: 38px;\n  height: 38px;\n  background: #fff;\n  z-index: 100;\n  text-align: center;\n  line-height: 40px;\n  color: #333;\n  font-size: 11px;\n}\n.swiper-top-prev {\n  left: 0;\n}\n.swiper-top-next {\n  right: 0;\n}\n.swiper-top-prev:hover, .swiper-top-next:hover {\n  background: #536DFE;\n  color: #fff;\n}\n", ""]);
+exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-logo-top {\n  width: 200px;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  float: left;\n}\n.layout-title-top {\n  width: 100px;\n  height: 30px;\n  border-radius: 3px;\n  float: left;\n  margin-top: -15px;\n  font-size: 14px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-nav {\n  width: 100%;\n  margin: 0 auto;\n  margin-right: -120px;\n}\n\n/* Swiper Slider */\n.index-page #slide {\n  top: -81px;\n  margin-bottom: -81px;\n}\n.caption {\n  background: #515a6e;\n  padding: 34px;\n}\n.caption h1 {\n  color: #fff;\n  margin: 0;\n  font-weight: 300;\n}\n.caption h1 span {\n  font-weight: 700;\n}\n.swiper-container {\n  margin: 0 auto;\n  position: relative;\n  overflow: hidden;\n  z-index: 1;\n  background: #2b2b2b;\n}\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-transition-property: -webkit-transform;\n  transition-property: -webkit-transform;\n  transition-property: transform;\n  transition-property: transform, -webkit-transform;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\n.swiper-container-vertical > .swiper-wrapper {\n  -webkit-box-orient: vertical;\n  -ms-flex-direction: column;\n  flex-direction: column;\n}\n.swiper-container-android .swiper-slide,\n.swiper-wrapper {\n  -webkit-transform: translate3d(0px, 0, 0);\n  transform: translate3d(0px, 0, 0);\n}\n.swiper-container {\n  width: 100%;\n  height: 15%;\n}\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  /* background-size:cover; */\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n.swiper-slide {\n  -webkit-flex-shrink: 0;\n  -ms-flex: 0 0 auto;\n  -ms-flex-negative: 0;\n      flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n}\n.swiper-slide img {\n  width: 100%;\n  display: block;\n}\n.swiper-top-prev, .swiper-top-next {\n  position: absolute;\n  top: 50%;\n  width: 38px;\n  height: 38px;\n  background: #fff;\n  z-index: 100;\n  text-align: center;\n  line-height: 40px;\n  color: #333;\n  font-size: 11px;\n}\n.swiper-top-prev {\n  left: 0;\n}\n.swiper-top-next {\n  right: 0;\n}\n.swiper-top-prev:hover, .swiper-top-next:hover {\n  background: #536DFE;\n  color: #fff;\n}\n", ""]);
 
 // exports
 
@@ -84055,7 +84059,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             routers: {
                 'home': '综合查询系统',
                 'reports': '报表管理',
-                'report': '报表查询'
+                'report': '报表查询',
+                'password': '密码修改'
             }
         };
     },
@@ -84158,7 +84163,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-logo-top {\n  width: 200px;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  float: left;\n}\n.layout-title-top {\n  width: 100px;\n  height: 30px;\n  border-radius: 3px;\n  float: left;\n  margin-top: -15px;\n  font-size: 14px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-nav {\n  width: 520px;\n  margin: 0 auto;\n  margin-right: -120px;\n}\n\n/* Swiper Slider */\n.index-page #slide {\n  top: -81px;\n  margin-bottom: -81px;\n}\n.caption {\n  background: #515a6e;\n  padding: 34px;\n}\n.caption h1 {\n  color: #fff;\n  margin: 0;\n  font-weight: 300;\n}\n.caption h1 span {\n  font-weight: 700;\n}\n.swiper-container {\n  margin: 0 auto;\n  position: relative;\n  overflow: hidden;\n  z-index: 1;\n  background: #2b2b2b;\n}\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-transition-property: -webkit-transform;\n  transition-property: -webkit-transform;\n  transition-property: transform;\n  transition-property: transform, -webkit-transform;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\n.swiper-container-vertical > .swiper-wrapper {\n  -webkit-box-orient: vertical;\n  -ms-flex-direction: column;\n  flex-direction: column;\n}\n.swiper-container-android .swiper-slide,\n.swiper-wrapper {\n  -webkit-transform: translate3d(0px, 0, 0);\n  transform: translate3d(0px, 0, 0);\n}\n.swiper-container {\n  width: 100%;\n  height: 100%;\n}\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  /* background-size:cover; */\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n.swiper-slide {\n  -webkit-flex-shrink: 0;\n  -ms-flex: 0 0 auto;\n  -ms-flex-negative: 0;\n      flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n}\n.swiper-slide img {\n  width: 100%;\n  display: block;\n}\n.swiper-top-prev, .swiper-top-next {\n  position: absolute;\n  top: 50%;\n  width: 38px;\n  height: 38px;\n  background: #fff;\n  z-index: 100;\n  text-align: center;\n  line-height: 40px;\n  color: #333;\n  font-size: 11px;\n}\n.swiper-top-prev {\n  left: 0;\n}\n.swiper-top-next {\n  right: 0;\n}\n.swiper-top-prev:hover, .swiper-top-next:hover {\n  background: #536DFE;\n  color: #fff;\n}\n", ""]);
+exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-logo-top {\n  width: 200px;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  float: left;\n}\n.layout-title-top {\n  width: 100px;\n  height: 30px;\n  border-radius: 3px;\n  float: left;\n  margin-top: -15px;\n  font-size: 14px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-nav {\n  width: 100%;\n  margin: 0 auto;\n  margin-right: -120px;\n}\n\n/* Swiper Slider */\n.index-page #slide {\n  top: -81px;\n  margin-bottom: -81px;\n}\n.caption {\n  background: #515a6e;\n  padding: 34px;\n}\n.caption h1 {\n  color: #fff;\n  margin: 0;\n  font-weight: 300;\n}\n.caption h1 span {\n  font-weight: 700;\n}\n.swiper-container {\n  margin: 0 auto;\n  position: relative;\n  overflow: hidden;\n  z-index: 1;\n  background: #2b2b2b;\n}\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-transition-property: -webkit-transform;\n  transition-property: -webkit-transform;\n  transition-property: transform;\n  transition-property: transform, -webkit-transform;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\n.swiper-container-vertical > .swiper-wrapper {\n  -webkit-box-orient: vertical;\n  -ms-flex-direction: column;\n  flex-direction: column;\n}\n.swiper-container-android .swiper-slide,\n.swiper-wrapper {\n  -webkit-transform: translate3d(0px, 0, 0);\n  transform: translate3d(0px, 0, 0);\n}\n.swiper-container {\n  width: 100%;\n  height: 15%;\n}\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  /* background-size:cover; */\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n.swiper-slide {\n  -webkit-flex-shrink: 0;\n  -ms-flex: 0 0 auto;\n  -ms-flex-negative: 0;\n      flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n}\n.swiper-slide img {\n  width: 100%;\n  display: block;\n}\n.swiper-top-prev, .swiper-top-next {\n  position: absolute;\n  top: 50%;\n  width: 38px;\n  height: 38px;\n  background: #fff;\n  z-index: 100;\n  text-align: center;\n  line-height: 40px;\n  color: #333;\n  font-size: 11px;\n}\n.swiper-top-prev {\n  left: 0;\n}\n.swiper-top-next {\n  right: 0;\n}\n.swiper-top-prev:hover, .swiper-top-next:hover {\n  background: #536DFE;\n  color: #fff;\n}\n", ""]);
 
 // exports
 
@@ -84321,7 +84326,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "MenuItem",
-                { attrs: { name: "1-1" } },
+                { attrs: { name: "1-1", to: "/password/reset" } },
                 [
                   _c("Icon", { attrs: { type: "ios-key" } }),
                   _vm._v("\n                修改密码\n            ")
@@ -84555,7 +84560,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-logo-top {\n  width: 200px;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  float: left;\n}\n.layout-title-top {\n  width: 100px;\n  height: 30px;\n  border-radius: 3px;\n  float: left;\n  margin-top: -15px;\n  font-size: 14px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-nav {\n  width: 520px;\n  margin: 0 auto;\n  margin-right: -120px;\n}\n\n/* Swiper Slider */\n.index-page #slide {\n  top: -81px;\n  margin-bottom: -81px;\n}\n.caption {\n  background: #515a6e;\n  padding: 34px;\n}\n.caption h1 {\n  color: #fff;\n  margin: 0;\n  font-weight: 300;\n}\n.caption h1 span {\n  font-weight: 700;\n}\n.swiper-container {\n  margin: 0 auto;\n  position: relative;\n  overflow: hidden;\n  z-index: 1;\n  background: #2b2b2b;\n}\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-transition-property: -webkit-transform;\n  transition-property: -webkit-transform;\n  transition-property: transform;\n  transition-property: transform, -webkit-transform;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\n.swiper-container-vertical > .swiper-wrapper {\n  -webkit-box-orient: vertical;\n  -ms-flex-direction: column;\n  flex-direction: column;\n}\n.swiper-container-android .swiper-slide,\n.swiper-wrapper {\n  -webkit-transform: translate3d(0px, 0, 0);\n  transform: translate3d(0px, 0, 0);\n}\n.swiper-container {\n  width: 100%;\n  height: 100%;\n}\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  /* background-size:cover; */\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n.swiper-slide {\n  -webkit-flex-shrink: 0;\n  -ms-flex: 0 0 auto;\n  -ms-flex-negative: 0;\n      flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n}\n.swiper-slide img {\n  width: 100%;\n  display: block;\n}\n.swiper-top-prev, .swiper-top-next {\n  position: absolute;\n  top: 50%;\n  width: 38px;\n  height: 38px;\n  background: #fff;\n  z-index: 100;\n  text-align: center;\n  line-height: 40px;\n  color: #333;\n  font-size: 11px;\n}\n.swiper-top-prev {\n  left: 0;\n}\n.swiper-top-next {\n  right: 0;\n}\n.swiper-top-prev:hover, .swiper-top-next:hover {\n  background: #536DFE;\n  color: #fff;\n}\n", ""]);
+exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-logo-top {\n  width: 200px;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  float: left;\n}\n.layout-title-top {\n  width: 100px;\n  height: 30px;\n  border-radius: 3px;\n  float: left;\n  margin-top: -15px;\n  font-size: 14px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-nav {\n  width: 100%;\n  margin: 0 auto;\n  margin-right: -120px;\n}\n\n/* Swiper Slider */\n.index-page #slide {\n  top: -81px;\n  margin-bottom: -81px;\n}\n.caption {\n  background: #515a6e;\n  padding: 34px;\n}\n.caption h1 {\n  color: #fff;\n  margin: 0;\n  font-weight: 300;\n}\n.caption h1 span {\n  font-weight: 700;\n}\n.swiper-container {\n  margin: 0 auto;\n  position: relative;\n  overflow: hidden;\n  z-index: 1;\n  background: #2b2b2b;\n}\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-transition-property: -webkit-transform;\n  transition-property: -webkit-transform;\n  transition-property: transform;\n  transition-property: transform, -webkit-transform;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\n.swiper-container-vertical > .swiper-wrapper {\n  -webkit-box-orient: vertical;\n  -ms-flex-direction: column;\n  flex-direction: column;\n}\n.swiper-container-android .swiper-slide,\n.swiper-wrapper {\n  -webkit-transform: translate3d(0px, 0, 0);\n  transform: translate3d(0px, 0, 0);\n}\n.swiper-container {\n  width: 100%;\n  height: 15%;\n}\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  /* background-size:cover; */\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n.swiper-slide {\n  -webkit-flex-shrink: 0;\n  -ms-flex: 0 0 auto;\n  -ms-flex-negative: 0;\n      flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n}\n.swiper-slide img {\n  width: 100%;\n  display: block;\n}\n.swiper-top-prev, .swiper-top-next {\n  position: absolute;\n  top: 50%;\n  width: 38px;\n  height: 38px;\n  background: #fff;\n  z-index: 100;\n  text-align: center;\n  line-height: 40px;\n  color: #333;\n  font-size: 11px;\n}\n.swiper-top-prev {\n  left: 0;\n}\n.swiper-top-next {\n  right: 0;\n}\n.swiper-top-prev:hover, .swiper-top-next:hover {\n  background: #536DFE;\n  color: #fff;\n}\n", ""]);
 
 // exports
 
@@ -84696,7 +84701,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-logo-top {\n  width: 200px;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  float: left;\n}\n.layout-title-top {\n  width: 100px;\n  height: 30px;\n  border-radius: 3px;\n  float: left;\n  margin-top: -15px;\n  font-size: 14px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-nav {\n  width: 520px;\n  margin: 0 auto;\n  margin-right: -120px;\n}\n\n/* Swiper Slider */\n.index-page #slide {\n  top: -81px;\n  margin-bottom: -81px;\n}\n.caption {\n  background: #515a6e;\n  padding: 34px;\n}\n.caption h1 {\n  color: #fff;\n  margin: 0;\n  font-weight: 300;\n}\n.caption h1 span {\n  font-weight: 700;\n}\n.swiper-container {\n  margin: 0 auto;\n  position: relative;\n  overflow: hidden;\n  z-index: 1;\n  background: #2b2b2b;\n}\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-transition-property: -webkit-transform;\n  transition-property: -webkit-transform;\n  transition-property: transform;\n  transition-property: transform, -webkit-transform;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\n.swiper-container-vertical > .swiper-wrapper {\n  -webkit-box-orient: vertical;\n  -ms-flex-direction: column;\n  flex-direction: column;\n}\n.swiper-container-android .swiper-slide,\n.swiper-wrapper {\n  -webkit-transform: translate3d(0px, 0, 0);\n  transform: translate3d(0px, 0, 0);\n}\n.swiper-container {\n  width: 100%;\n  height: 100%;\n}\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  /* background-size:cover; */\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n.swiper-slide {\n  -webkit-flex-shrink: 0;\n  -ms-flex: 0 0 auto;\n  -ms-flex-negative: 0;\n      flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n}\n.swiper-slide img {\n  width: 100%;\n  display: block;\n}\n.swiper-top-prev, .swiper-top-next {\n  position: absolute;\n  top: 50%;\n  width: 38px;\n  height: 38px;\n  background: #fff;\n  z-index: 100;\n  text-align: center;\n  line-height: 40px;\n  color: #333;\n  font-size: 11px;\n}\n.swiper-top-prev {\n  left: 0;\n}\n.swiper-top-next {\n  right: 0;\n}\n.swiper-top-prev:hover, .swiper-top-next:hover {\n  background: #536DFE;\n  color: #fff;\n}\n", ""]);
+exports.push([module.i, "\n.layout {\n  border: 1px solid #d7dde4;\n  background: #f5f7f9;\n  position: relative;\n}\n.layout-breadcrumb {\n  padding: 10px 15px 0;\n}\n.layout-content {\n  min-height: 800px;\n  margin: 15px;\n  overflow: hidden;\n  background: #fff;\n  border-radius: 4px;\n}\n.layout-content-main {\n  padding: 10px;\n}\n.layout-copy {\n  text-align: center;\n  padding: 10px 0 20px;\n  color: #9ea7b4;\n}\n.layout-menu-left {\n  background: #464c5b;\n  position: fixed;\n  height: 100vh;\n  left: 0;\n  overflow: auto;\n}\n.layout-logo {\n  height: 60px;\n  width: 100%;\n  background: #fff;\n  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);\n  font-size: 24px;\n  color: #464c5b;\n  text-align: center;\n}\n.layout-logo-left {\n  width: 90%;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  margin: 15px auto;\n  font-size: 20px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-logo-top {\n  width: 200px;\n  height: 30px;\n  background: #515a6e;\n  border-radius: 3px;\n  float: left;\n}\n.layout-title-top {\n  width: 100px;\n  height: 30px;\n  border-radius: 3px;\n  float: left;\n  margin-top: -15px;\n  font-size: 14px;\n  color: #f5f7f9;\n  text-align: center;\n}\n.layout-nav {\n  width: 100%;\n  margin: 0 auto;\n  margin-right: -120px;\n}\n\n/* Swiper Slider */\n.index-page #slide {\n  top: -81px;\n  margin-bottom: -81px;\n}\n.caption {\n  background: #515a6e;\n  padding: 34px;\n}\n.caption h1 {\n  color: #fff;\n  margin: 0;\n  font-weight: 300;\n}\n.caption h1 span {\n  font-weight: 700;\n}\n.swiper-container {\n  margin: 0 auto;\n  position: relative;\n  overflow: hidden;\n  z-index: 1;\n  background: #2b2b2b;\n}\n.swiper-wrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-transition-property: -webkit-transform;\n  transition-property: -webkit-transform;\n  transition-property: transform;\n  transition-property: transform, -webkit-transform;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box;\n}\n.swiper-container-vertical > .swiper-wrapper {\n  -webkit-box-orient: vertical;\n  -ms-flex-direction: column;\n  flex-direction: column;\n}\n.swiper-container-android .swiper-slide,\n.swiper-wrapper {\n  -webkit-transform: translate3d(0px, 0, 0);\n  transform: translate3d(0px, 0, 0);\n}\n.swiper-container {\n  width: 100%;\n  height: 15%;\n}\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  /* background-size:cover; */\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n.swiper-slide {\n  -webkit-flex-shrink: 0;\n  -ms-flex: 0 0 auto;\n  -ms-flex-negative: 0;\n      flex-shrink: 0;\n  width: 100%;\n  height: 100%;\n  position: relative;\n}\n.swiper-slide img {\n  width: 100%;\n  display: block;\n}\n.swiper-top-prev, .swiper-top-next {\n  position: absolute;\n  top: 50%;\n  width: 38px;\n  height: 38px;\n  background: #fff;\n  z-index: 100;\n  text-align: center;\n  line-height: 40px;\n  color: #333;\n  font-size: 11px;\n}\n.swiper-top-prev {\n  left: 0;\n}\n.swiper-top-next {\n  right: 0;\n}\n.swiper-top-prev:hover, .swiper-top-next:hover {\n  background: #536DFE;\n  color: #fff;\n}\n", ""]);
 
 // exports
 
@@ -89500,7 +89505,8 @@ var envs = {
         userInfoLoadStatus: 0,
         userName: window.sessionStorage.getItem('userName'),
         password: window.sessionStorage.getItem('password'),
-        permission: window.sessionStorage.getItem('permission')
+        permission: window.sessionStorage.getItem('permission'),
+        resetPasswordStatus: 0
     },
     /**
      * Defines the actions used to retrieve the data.
@@ -89534,7 +89540,6 @@ var envs = {
             }).catch(function () {
                 commit('setUserInfo', {});
                 commit('setUserInfoLoadStatus', 3);
-                throw "fdfdsf";
             });
         },
         resetUserInfo: function resetUserInfo(_ref3) {
@@ -89547,6 +89552,24 @@ var envs = {
 
             commit('removeUserInfo');
             commit('setUserInfoLoadStatus', 0);
+        },
+        resetPassword: function resetPassword(_ref5, data) {
+            var commit = _ref5.commit;
+
+            commit('setResetPasswordeStatus', 1);
+            var userName = window.sessionStorage.getItem('userName');
+
+            __WEBPACK_IMPORTED_MODULE_0__api_env_js__["a" /* default */].postPassword(userName, data.password).then(function (response) {
+                commit('setResetPasswordeStatus', 2);
+                window.sessionStorage.setItem('password', data.password);
+            }).catch(function () {
+                commit('setResetPasswordeStatus', 3);
+            });
+        },
+        resetResetPassword: function resetResetPassword(_ref6) {
+            var commit = _ref6.commit;
+
+            commit('setResetPasswordeStatus', 0);
         }
     },
     /**
@@ -89573,6 +89596,9 @@ var envs = {
             window.sessionStorage.removeItem('userName');
             window.sessionStorage.removeItem('password');
             window.sessionStorage.removeItem('permission');
+        },
+        setResetPasswordeStatus: function setResetPasswordeStatus(state, status) {
+            state.resetPasswordStatus = status;
         }
     },
     /**
@@ -89594,6 +89620,9 @@ var envs = {
         },
         getDbConnectStatus: function getDbConnectStatus(state) {
             return state.dbConnectStatus;
+        },
+        getResetPasswordStatus: function getResetPasswordStatus(state) {
+            return state.resetPasswordStatus;
         }
     }
 };
@@ -89624,6 +89653,15 @@ var envs = {
     postUserInfo: function postUserInfo(userName, password) {
         // return axios.get( ROAST_CONFIG.API_URL + '/user/info' );
         return axios.post(__WEBPACK_IMPORTED_MODULE_0__config_js__["a" /* ROAST_CONFIG */].API_URL + '/user/info', {
+            userName: userName,
+            password: password
+        });
+    },
+    /**
+     * POST /api/v1/password
+     */
+    postPassword: function postPassword(userName, password) {
+        return axios.post(__WEBPACK_IMPORTED_MODULE_0__config_js__["a" /* ROAST_CONFIG */].API_URL + '/password', {
             userName: userName,
             password: password
         });
@@ -89835,6 +89873,445 @@ var reports = {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 461 */,
+/* 462 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(472)
+}
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(465)
+/* template */
+var __vue_template__ = __webpack_require__(466)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/pages/ResetPassword.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-935215c6", Component.options)
+  } else {
+    hotAPI.reload("data-v-935215c6", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 463 */,
+/* 464 */,
+/* 465 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_global_ResetForm_vue__ = __webpack_require__(467);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_global_ResetForm_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_global_ResetForm_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+	components: {
+		ResetForm: __WEBPACK_IMPORTED_MODULE_0__components_global_ResetForm_vue___default.a
+	},
+	created: function created() {},
+
+	/**
+ * 定义组件的计算属性
+ */
+	computed: {
+		resetPasswordStatus: function resetPasswordStatus() {
+			if (this.$store.getters.getResetPasswordStatus == 2) {
+				this.$Message.success('修改成功！');
+				this.$router.push('/home');
+				this.$store.dispatch('resetResetPassword');
+			} else if (this.$store.getters.getResetPasswordStatus == 3) {
+				this.$Message.error('修改失败！');
+				// this.$router.push('/login');
+				this.$store.dispatch('resetResetPassword');
+			}
+			return this.$store.getters.getResetPasswordStatus;
+		}
+	},
+	methods: {
+		handleSubmit: function handleSubmit(_ref) {
+			var password = _ref.password;
+
+			this.$store.dispatch('resetPassword', {
+				password: password
+			});
+		}
+	}
+});
+
+/***/ }),
+/* 466 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c(
+      "div",
+      { staticClass: "page-container" },
+      [
+        _c("reset-form", { on: { "on-success-valid": _vm.handleSubmit } }),
+        _vm._v(" "),
+        _c("div", { staticStyle: { display: "none" } }, [
+          _vm._v(_vm._s(_vm.resetPasswordStatus))
+        ])
+      ],
+      1
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-935215c6", module.exports)
+  }
+}
+
+/***/ }),
+/* 467 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(468)
+}
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(470)
+/* template */
+var __vue_template__ = __webpack_require__(471)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/global/ResetForm.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-69cba1be", Component.options)
+  } else {
+    hotAPI.reload("data-v-69cba1be", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 468 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(469);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(6)("1ce17288", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-69cba1be\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/sass-loader/lib/loader.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ResetForm.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-69cba1be\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/sass-loader/lib/loader.js!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ResetForm.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 469 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+/* 470 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+	data: function data() {
+		return {
+			form: {
+				password: '',
+				repeat: ''
+			},
+			rules: {
+				password: [{ required: true, message: '密码不能为空', trigger: 'blur' }, { type: 'string', min: 6, message: '密码不能少于6位' }],
+				repeat: [{ required: true, message: '密码不能为空', trigger: 'blur' }, { type: 'string', min: 6, message: '密码不能少于6位' }]
+			}
+		};
+	},
+
+	methods: {
+		handleSubmit: function handleSubmit() {
+			var _this = this;
+
+			this.$refs.resetForm.validate(function (valid) {
+				if (valid) {
+					if (_this.form.password != _this.form.repeat) {
+						_this.$Message.error('密码不匹配，请重新输入！');
+						_this.$refs.resetForm.resetFields();
+					} else {
+						_this.$Message.success('验证成功！');
+						// this.$router.push('/home');
+						_this.$emit('on-success-valid', {
+							password: _this.form.password
+						});
+					}
+				} else {
+					_this.$Messge.error('验证失败！');
+				}
+			});
+		}
+	}
+});
+
+/***/ }),
+/* 471 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "Form",
+    {
+      ref: "resetForm",
+      attrs: { model: _vm.form, rules: _vm.rules },
+      nativeOn: {
+        keydowm: function($event) {
+          if (
+            !("button" in $event) &&
+            _vm._k($event.keyCode, "enter", 13, $event.key, "Enter")
+          ) {
+            return null
+          }
+          return _vm.handleSubmit($event)
+        }
+      }
+    },
+    [
+      _c(
+        "FormItem",
+        { attrs: { prop: "password" } },
+        [
+          _c("Input", {
+            attrs: { type: "password", placeholder: "请输入密码" },
+            model: {
+              value: _vm.form.password,
+              callback: function($$v) {
+                _vm.$set(_vm.form, "password", $$v)
+              },
+              expression: "form.password"
+            }
+          })
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "FormItem",
+        { attrs: { prop: "repeat" } },
+        [
+          _c("Input", {
+            attrs: { type: "password", placeholder: "请再次输入密码" },
+            model: {
+              value: _vm.form.repeat,
+              callback: function($$v) {
+                _vm.$set(_vm.form, "repeat", $$v)
+              },
+              expression: "form.repeat"
+            }
+          })
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "FromItem",
+        [
+          _c(
+            "Button",
+            {
+              attrs: { type: "primary" },
+              on: {
+                click: function($event) {
+                  _vm.handleSubmit("form")
+                }
+              }
+            },
+            [_vm._v("确认修改")]
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-69cba1be", module.exports)
+  }
+}
+
+/***/ }),
+/* 472 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(473);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(6)("6f504b0a", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-935215c6\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ResetPassword.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-935215c6\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ResetPassword.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 473 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.page-container {\n  margin: 20px auto 0 auto;\n}\nh1 {\n  font-size: 30px;\n  font-weight: 700;\n  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);\n}\nform {\n  position: relative;\n  width: 305px;\n  margin: auto;\n  text-align: center;\n}\n", ""]);
+
+// exports
+
 
 /***/ })
 /******/ ]);

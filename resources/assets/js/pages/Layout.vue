@@ -47,7 +47,8 @@
                 routers: {
                     'home':'综合查询系统',
                     'reports':'报表管理',
-                    'report':'报表查询'
+                    'report':'报表查询',
+                    'password':'密码修改'
                 }
             }
         },

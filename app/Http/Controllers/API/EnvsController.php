@@ -46,4 +46,19 @@ class EnvsController extends Controller
             return response()->json( $userInfo, 201 );    //以 JSON 格式返回 API 请求数据
         }
     }
+
+    /*
+     |-------------------------------------------------------------------------------
+     | Reset Password
+     |-------------------------------------------------------------------------------
+     | URL:            /api/v1/password
+     | Method:         POST
+     | Description:    Resets the password in the application
+    */
+    public function postPassword(ExtractEnvRequest $request){
+        $userName = $request->input('userName');
+        $password = $request->input('password');
+
+        return response()->json( $userName, 201 );    //以 JSON 格式返回 API 请求数据
+    }
 }

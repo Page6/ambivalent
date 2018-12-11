@@ -23,7 +23,8 @@ export const envs = {
         userInfoLoadStatus: 0,
         userName: window.sessionStorage.getItem('userName'),
         password: window.sessionStorage.getItem('password'),
-        permission: window.sessionStorage.getItem('permission')
+        permission: window.sessionStorage.getItem('permission'),
+        resetPasswordStatus: 0
     },
     /**
      * Defines the actions used to retrieve the data.
@@ -57,7 +58,6 @@ export const envs = {
                 .catch( function(){
                     commit( 'setUserInfo', {});
                     commit( 'setUserInfoLoadStatus', 3);
-                    throw "fdfdsf";
                 });
         },
         resetUserInfo( { commit } ){
@@ -66,7 +66,23 @@ export const envs = {
         logout( { commit } ){
             commit( 'removeUserInfo' );
             commit( 'setUserInfoLoadStatus', 0 );
-        }            
+        },
+        resetPassword( { commit }, data ){
+            commit( 'setResetPasswordeStatus', 1 );
+            let userName = window.sessionStorage.getItem('userName');
+
+            EnvAPI.postPassword( userName, data.password )
+                .then( function( response ){
+                    commit( 'setResetPasswordeStatus', 2);
+                    window.sessionStorage.setItem('password', data.password);
+                })
+                .catch( function(){
+                    commit( 'setResetPasswordeStatus', 3);
+                });
+        },
+        resetResetPassword( { commit } ){
+            commit( 'setResetPasswordeStatus', 0 );
+        }
     },
     /**
      * Defines the mutations used
@@ -96,6 +112,10 @@ export const envs = {
             window.sessionStorage.removeItem('userName');
             window.sessionStorage.removeItem('password');
             window.sessionStorage.removeItem('permission');
+        },
+
+        setResetPasswordeStatus( state, status ){
+          state.resetPasswordStatus = status;
         }
     },
     /**
@@ -121,6 +141,10 @@ export const envs = {
 
         getDbConnectStatus( state ){
           return state.dbConnectStatus;
+        },
+
+        getResetPasswordStatus( state ){
+          return state.resetPasswordStatus;
         }
     }
 }

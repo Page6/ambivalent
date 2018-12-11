@@ -14,7 +14,7 @@
                     <Icon type="ios-contact"></Icon>
                     用户管理
                 </template>
-                <MenuItem name="1-1">
+                <MenuItem name="1-1" to="/password/reset">
                     <Icon type="ios-key"></Icon>
                     修改密码
                 </MenuItem>

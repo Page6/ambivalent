@@ -131,6 +131,17 @@ Route::group(['prefix' => 'v1'], function(){
      | Description:    Gets report columns
     */
     Route::get('/columns/{id}', 'API\ReportsController@getColumns');
+
+    /*
+     |-------------------------------------------------------------------------------
+     | Reset Password
+     |-------------------------------------------------------------------------------
+     | URL:            /api/v1/password
+     | Controller:     API\EnvsController@postPassword
+     | Method:         POST
+     | Description:    Resets password in the application
+    */
+    Route::post('/password', 'API\EnvsController@postPassword');
 });
 
 // 私有路由，需要登录才能访问

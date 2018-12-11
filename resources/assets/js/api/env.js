@@ -23,5 +23,16 @@ export default {
                 password: password
             }
         );
+    },
+    /**
+     * POST /api/v1/password
+     */
+    postPassword: function( userName, password ){
+        return axios.post( ROAST_CONFIG.API_URL + '/password',
+            {
+                userName: userName,
+                password: password
+            }
+        );
     }
 }
