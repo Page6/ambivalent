@@ -4,7 +4,9 @@
 <template>
     <Menu mode="horizontal" active-name="" theme="dark" :open-names="['']">
         <div class="layout-logo-top">
-            <img src="../../../images/logo.png" width="200" height="30" alt="综合查询系统" />
+            <a href="/#/home">
+                <img src="../../../images/logo.png" width="200" height="30" alt="综合查询系统" />
+            </a>
         </div>
         <div class="layout-nav">
             <Submenu name="1">
