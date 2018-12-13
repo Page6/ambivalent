@@ -49,7 +49,8 @@ import {
     Option,
     OptionGroup,
     DatePicker,
-    Spin
+    Spin,
+    Upload
 } from 'iview';
 
 Vue.component('Button', Button);
@@ -78,6 +79,7 @@ Vue.component('OptionGroup', OptionGroup);
 Vue.component('DatePicker', DatePicker);
 Vue.prototype.$Spin = Spin;
 Vue.component('Spin', Spin);
+Vue.component('Upload', Upload);
 
 /**
  * Makes a new VueRouter that we will use to run all of the routes for the app.
@@ -127,6 +129,11 @@ export default new VueRouter({
                     path: 'traces',
                     name: 'traces',
                     component: Vue.component( 'Traces', require( './pages/Traces.vue' ) )
+                },
+                {
+                    path: 'file',
+                    name: 'file',
+                    component: Vue.component( 'File', require( './pages/File.vue' ) )
                 },
                 {
                     path: 'cafes',

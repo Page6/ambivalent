@@ -14,7 +14,7 @@
                     <Icon type="ios-cloud-upload"></Icon>
                     上传管理
                 </template>
-                <MenuItem name="3-1">
+                <MenuItem name="3-1" to="/file">
                     <Icon type="ios-folder"></Icon>
                     文件更新
                 </MenuItem>

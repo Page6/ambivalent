@@ -11,4 +11,10 @@ class Cafe extends Model
 	{
 	    return $this->belongsToMany(BrewMethod::class, 'cafes_brew_methods', 'cafe_id', 'brew_method_id');
 	}
+
+	// 咖啡店图片
+	public function photos()
+	{
+	    return $this->hasMany(CafePhoto::class, 'id', 'cafe_id');
+	}
 }

@@ -21,14 +21,20 @@ export default {
     /**
      * POST /api/v1/cafes
      */
-    postAddNewCafe: function( name, address, city, state, zip ){
+    postAddNewCafe: function( name, address, city, state, zip, picture ){
+        let formData = new FormData();
+        formData.append('name', name);
+        formData.append('address', address);
+        formData.append('city', city);
+        formData.append('state', state);
+        formData.append('zip', zip);
+        formData.append('picture', picture);
         return axios.post( ROAST_CONFIG.API_URL + '/cafes',
+            formData,
             {
-                name: name,
-                address: address,
-                city: city,
-                state: state,
-                zip: zip
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
             }
         );
     }

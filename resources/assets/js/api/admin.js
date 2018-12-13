@@ -11,5 +11,20 @@ export default {
      */
     getTraces: function(){
         return axios.get( ROAST_CONFIG.API_URL + '/traces' );
+    },
+    /**
+     * POST /api/v1/file
+     */
+    postFile: function( file ){
+        let formData = new FormData();
+        formData.append('file', file);
+        return axios.post( ROAST_CONFIG.API_URL + '/file',
+            formData,
+            {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            } 
+        );
     }
 }

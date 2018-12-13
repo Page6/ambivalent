@@ -49,7 +49,8 @@
                     'reports':'报表管理',
                     'report':'报表查询',
                     'password':'密码修改',
-                    'traces':'跟踪日志'
+                    'traces':'跟踪日志',
+                    'file':'文件更新'
                 }
             }
         },

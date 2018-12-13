@@ -38,6 +38,11 @@
 	                    <span class="validation" v-show="!validations.zip.is_valid">{{ validations.zip.text }}</span>
 	                </div>
 	                <div class="large-12 medium-12 small-12 cell">
+					     <label>图片
+					         <input type="file" id="cafe-photo" ref="photo" v-on:change="handleFileUpload()"/>
+					     </label>
+					</div>
+	                <div class="large-12 medium-12 small-12 cell">
                         <a class="button" v-on:click="submitNewCafe()">提交</a>
                     </div>
 	            </div>
@@ -80,6 +85,9 @@
 	        }
 	    },
 	    methods: {
+	    	handleFileUpload() {
+			    this.picture = this.$refs.photo.files[0];
+			},
             submitNewCafe: function () {
             	if (this.validateNewCafe()) {
 	            	// 在 Vuex 上分发一个 addCafe 动作方法，同时以 JSON 对象方式将表单数据传递给该 addCafe 方法
@@ -88,7 +96,8 @@
 			        address: this.address,
 			        city: this.city,
 			        state: this.state,
-			        zip: this.zip
+			        zip: this.zip,
+			        picture: this.picture
 			    	});
 		    	}
             },

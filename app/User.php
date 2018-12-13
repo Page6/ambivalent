@@ -27,4 +27,10 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    // 上传的咖啡店图片
+    public function cafePhotos()
+    {
+        return $this->hasMany(CafePhoto::class, 'id', 'cafe_id');
+    }
 }

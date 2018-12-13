@@ -7,6 +7,8 @@ use App\Http\Requests\ExtractAdminRequest;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
 
 class AdminsController extends Controller
 {
@@ -48,4 +50,36 @@ class AdminsController extends Controller
 
         return response()->json( $traces );    //以 JSON 格式返回 API 请求数据
     }
+
+    /*
+     |-------------------------------------------------------------------------------
+     | Post File
+     |-------------------------------------------------------------------------------
+     | URL:            /api/v1/file
+     | Method:         POST
+     | Description:    uploads the file in the application
+    */
+	public function postFile(ExtractAdminRequest $request){
+
+		if ($request->hasFile('file')) {
+			$file = $request->file('file');
+			if ($file && $file->isValid()) {
+	            // $destinationPath = storage_path('app/public/photos/');
+	            $destinationPath = storage_path('../storage/app/public/');
+
+	            // 如果目标目录不存在，则创建之
+	            if (!file_exists($destinationPath)) {
+	                mkdir($destinationPath);
+	            }
+
+	            // 文件名
+	            // $filename = time() . '-' . $file->getClientOriginalName();
+	            $filename = $file->getClientOriginalName();
+	            // 保存文件到目标目录
+	            $file->move($destinationPath, $filename);
+	        }
+	    }
+
+		return response()->json( $file, 201 );
+	}
 }

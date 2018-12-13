@@ -60,6 +60,31 @@ class CafesController extends Controller
         
         $cafe->save();
 
+        $photo = $request->file('picture');
+        if ($photo && $photo->isValid()) {
+            // $destinationPath = storage_path('app/public/photos/');
+            $destinationPath = storage_path('../resources/');
+
+            // 如果目标目录不存在，则创建之
+            if (!file_exists($destinationPath)) {
+                mkdir($destinationPath);
+            }
+
+            // 文件名
+            $filename = time() . '-' . $photo->getClientOriginalName();
+            // 保存文件到目标目录
+            $photo->move($destinationPath, $filename);
+
+            // 在数据库中创建新纪录保存刚刚上传的文件
+            // $cafePhoto = new CafePhoto();
+
+            // $cafePhoto->cafe_id = $parentCafe->id;
+            // $cafePhoto->uploaded_by = Auth::user()->id;
+            // $cafePhoto->file_url = $destinationPath . DIRECTORY_SEPARATOR . $filename;
+
+            // $cafePhoto->save();
+        }
+
         return response()->json($cafe, 201);    // 遵循 RESTful 原则返回 201 状态码，表示实体已创建
     }
 }

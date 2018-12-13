@@ -153,6 +153,17 @@ Route::group(['prefix' => 'v1'], function(){
      | Description:    Gets all of the traces in the application
     */
     Route::get('/traces', 'API\AdminsController@getTraces');
+
+    /*
+     |-------------------------------------------------------------------------------
+     | Upload File
+     |-------------------------------------------------------------------------------
+     | URL:            /api/v1/file
+     | Controller:     API\EnvsController@postFile
+     | Method:         POST
+     | Description:    Uploads the file in the application
+    */
+    Route::post('/file', 'API\AdminsController@postFile');
 });
 
 // 私有路由，需要登录才能访问

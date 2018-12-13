@@ -17,7 +17,9 @@ export const admins = {
 	// 想要跟踪数据的状态
 	state: {
         traces: [],	// 报表数组
-        tracessLoadStatus: 0	// 加载状态: 0 -> 数据尚未加载, 1 -> 数据开始加载, 2 -> 数据加载成功, 3 -> 数据加载失败
+        tracessLoadStatus: 0,	// 加载状态: 0 -> 数据尚未加载, 1 -> 数据开始加载, 2 -> 数据加载成功, 3 -> 数据加载失败
+        file: {},	//文件对象
+        fileLoadStatus: 0
     },
     /**
      * Defines the actions used to retrieve the data.
@@ -36,6 +38,19 @@ export const admins = {
 	                commit( 'setTraces', [] );
 	                commit( 'setTracesLoadStatus', 3 );
 	            });
+        },
+        loadFile( { commit }, data){
+        	commit( 'setFileLoadStatus', 1 );
+
+        	AdminAPI.postFile( data.file )
+        		.then( function( response ){
+        			commit( 'setFile ', response.data );
+        			commit( 'setFileLoadStatus', 2 );
+        		})
+        		.catch( function(){
+        			commit( 'setFile ', {} );
+        			commit( 'setFileLoadStatus', 3);
+        		});
         }
     },
     /**
@@ -49,6 +64,14 @@ export const admins = {
 
 	    setTraces( state, traces ){
 	      state.traces = traces;
+	    },
+
+	    setFileLoadStatus( state, status ){
+	      state.fileLoadStatus = status;
+	    },
+
+	    setFile( state, file ){
+	      state.file = file;
 	    }
 	},
 	/**
@@ -62,6 +85,14 @@ export const admins = {
 
 	    getTraces( state ){
 	      return state.traces;
+	    },
+
+	    getFileLoadStatus( state ){
+	      return state.fileLoadStatus;
+	    },
+
+	    getFile( state ){
+	      return state.file;
 	    }
 	}
 }
