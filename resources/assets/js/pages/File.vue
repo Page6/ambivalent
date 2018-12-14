@@ -13,17 +13,16 @@
 			>
 				<Icon type="ios-cloud-upload" size="52" style="color: #3399ff"></Icon>
 				<p>请选择需要上传的文件</p>
+				<p>请确保文件格式为zip压缩文件</p>
 				<FormItem 
 					prop="file"
 					:rules="{required: false, message: '上传文件不能为空', trigger: 'blur'}"
 				>
-					<!-- <input id="upload" name="upload" type="file" class="file" placeholder="请上传文件"></input> -->
 					<input type="file" id="upload-file" ref="file" v-on:change="handleFileUpload()"/>
 				</FormItem>
-				<FromItem>
-					<!-- <Button class="signin" type="primary" @click="handleSubmit('form')">登录</Button> -->
+				<FormItem>
 					<Button type="primary" @click="handleSubmit('form')">确认上传</Button>
-				</FromItem>
+				</FormItem>
 			</Form>
 			<div style="display: none;">{{fileLoadStatus}}</div>
 		</div>
@@ -32,12 +31,17 @@
 
 <script>
 	export default {
+		computed: {
+		    fileLoadStatus(){
+				return this.$store.getters.getFileLoadStatus;
+		    }
+		},
 		methods: {
 			handleFileUpload() {
 			    this.file = this.$refs.file.files[0];
 			},
 			handleSubmit (name) {
-            	this.$Message.success('文件已上传!');
+            	this.$Message.info('文件正在上传!');
             	this.$store.dispatch( 'loadFile', {
 					file: this.file
 				});

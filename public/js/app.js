@@ -88358,15 +88358,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+	computed: {
+		fileLoadStatus: function fileLoadStatus() {
+			return this.$store.getters.getFileLoadStatus;
+		}
+	},
 	methods: {
 		handleFileUpload: function handleFileUpload() {
 			this.file = this.$refs.file.files[0];
 		},
 		handleSubmit: function handleSubmit(name) {
-			this.$Message.success('文件已上传!');
+			this.$Message.info('文件正在上传!');
 			this.$store.dispatch('loadFile', {
 				file: this.file
 			});
@@ -88412,6 +88416,8 @@ var render = function() {
             _vm._v(" "),
             _c("p", [_vm._v("请选择需要上传的文件")]),
             _vm._v(" "),
+            _c("p", [_vm._v("请确保文件格式为zip压缩文件")]),
+            _vm._v(" "),
             _c(
               "FormItem",
               {
@@ -88438,7 +88444,7 @@ var render = function() {
             ),
             _vm._v(" "),
             _c(
-              "FromItem",
+              "FormItem",
               [
                 _c(
                   "Button",

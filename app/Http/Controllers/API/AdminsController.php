@@ -9,6 +9,7 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
+use ZipArchive;
 
 class AdminsController extends Controller
 {
@@ -61,11 +62,14 @@ class AdminsController extends Controller
     */
 	public function postFile(ExtractAdminRequest $request){
 
+		// 判断文件是否成功传递至后台
 		if ($request->hasFile('file')) {
 			$file = $request->file('file');
 			if ($file && $file->isValid()) {
+				// 默认路径是storage目录
 	            // $destinationPath = storage_path('app/public/photos/');
-	            $destinationPath = storage_path('../storage/app/public/');
+	            // 文件保存至项目根路径
+	            $destinationPath = storage_path('../');
 
 	            // 如果目标目录不存在，则创建之
 	            if (!file_exists($destinationPath)) {
@@ -75,11 +79,29 @@ class AdminsController extends Controller
 	            // 文件名
 	            // $filename = time() . '-' . $file->getClientOriginalName();
 	            $filename = $file->getClientOriginalName();
-	            // 保存文件到目标目录
+	            // 保存文件到目录
 	            $file->move($destinationPath, $filename);
+
+	            // 获取当前路径，默认路径是public目录
+	            // 切换至项目根路径
+	            $cur = getcwd();
+				$zip = new ZipArchive();
+				if($zip->open($cur.'/../' . $filename)==TRUE){
+					$zip->extractTo($cur.'/../');
+					$zip->close();
+				} else {
+					return response()->json( null, 301 );		
+				}
+
+				// 删除原压缩文件
+				unlink($destinationPath . $filename);
+	        } else {
+	        	return response()->json( null, 301 );
 	        }
+	    } else {
+	    	return response()->json( null, 301 );
 	    }
 
-		return response()->json( $file, 201 );
+		return response()->json( null, 201 );
 	}
 }
